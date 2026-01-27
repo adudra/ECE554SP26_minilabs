@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_ctrl_tb

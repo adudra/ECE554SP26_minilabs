@@ -1,0 +1,91 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x1EAE5D0F1EAE5D0F",
+      "device": "xczu3eg-sfvc784-2-e",
+      "gen_directory": "../../../../minlab0.gen/sources_1/bd/minlab0",
+      "name": "minlab0",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "zynq_ultra_ps_e_0": "",
+      "rom_ctrl_0": ""
+    },
+    "ports": {
+      "addr_oneshot_0": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "enable_0": {
+        "direction": "I"
+      },
+      "dout_0": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      }
+    },
+    "components": {
+      "zynq_ultra_ps_e_0": {
+        "vlnv": "xilinx.com:ip:zynq_ultra_ps_e:3.5",
+        "ip_revision": "8",
+        "xci_name": "minlab0_zynq_ultra_ps_e_0_0",
+        "xci_path": "ip\\minlab0_zynq_ultra_ps_e_0_0\\minlab0_zynq_ultra_ps_e_0_0.xci",
+        "inst_hier_path": "zynq_ultra_ps_e_0",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "PSU_DDR_RAM_HIGHADDR_OFFSET": {
+            "value": "0x00000002"
+          },
+          "PSU_DDR_RAM_LOWADDR_OFFSET": {
+            "value": "0x80000000"
+          },
+          "PSU__DDR_HIGH_ADDRESS_GUI_ENABLE": {
+            "value": "0"
+          },
+          "PSU__USE__M_AXI_GP2": {
+            "value": "0"
+          }
+        }
+      },
+      "rom_ctrl_0": {
+        "vlnv": "xilinx.com:user:rom_ctrl:1.0",
+        "ip_revision": "2",
+        "xci_name": "minlab0_rom_ctrl_0_1",
+        "xci_path": "ip\\minlab0_rom_ctrl_0_1\\minlab0_rom_ctrl_0_1.xci",
+        "inst_hier_path": "rom_ctrl_0",
+        "has_run_ip_tcl": "true"
+      }
+    },
+    "nets": {
+      "addr_oneshot_0_1": {
+        "ports": [
+          "addr_oneshot_0",
+          "rom_ctrl_0/addr_oneshot"
+        ]
+      },
+      "enable_0_1": {
+        "ports": [
+          "enable_0",
+          "rom_ctrl_0/enable"
+        ]
+      },
+      "rom_ctrl_0_dout": {
+        "ports": [
+          "rom_ctrl_0/dout",
+          "dout_0"
+        ]
+      },
+      "zynq_ultra_ps_e_0_pl_clk0": {
+        "ports": [
+          "zynq_ultra_ps_e_0/pl_clk0",
+          "rom_ctrl_0/clk"
+        ]
+      }
+    }
+  }
+}
