@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
-| Date         : Thu Jan 22 18:11:59 2026
+| Date         : Tue Jan 27 15:51:27 2026
 | Host         : Avery running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file minlab0_wrapper_control_sets_placed.rpt
 | Design       : minlab0_wrapper
@@ -60,7 +60,7 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               3 |            1 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |               8 |            2 |
+| No           | Yes                   | No                     |               8 |            1 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
@@ -74,7 +74,7 @@ Table of Contents
 |                  Clock Signal                  | Enable Signal |   Set/Reset Signal   | Slice Load Count | Bel Load Count | Bels / Slice |
 +------------------------------------------------+---------------+----------------------+------------------+----------------+--------------+
 |  minlab0_i/rom_ctrl_0/inst/addr_reg[2]_i_2_n_0 |               |                      |                1 |              3 |         3.00 |
-|  minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk0      |               | enable_0_IBUF_inst/O |                2 |              8 |         4.00 |
+|  minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk0      |               | enable_0_IBUF_inst/O |                1 |              8 |         8.00 |
 +------------------------------------------------+---------------+----------------------+------------------+----------------+--------------+
 
 

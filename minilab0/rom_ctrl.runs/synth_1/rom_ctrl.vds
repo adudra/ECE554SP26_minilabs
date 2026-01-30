@@ -1,0 +1,346 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Jan 27 15:29:41 2026
+# Process ID         : 25948
+# Current directory  : C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.runs/synth_1
+# Command line       : vivado.exe -log rom_ctrl.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rom_ctrl.tcl
+# Log file           : C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.runs/synth_1/rom_ctrl.vds
+# Journal file       : C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.runs/synth_1\vivado.jou
+# Running On         : Avery
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
+# CPU Frequency      : 2592 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16927 MB
+# Swap memory        : 3836 MB
+# Total Virtual      : 20764 MB
+# Available Virtual  : 4105 MB
+#-----------------------------------------------------------
+source rom_ctrl.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 552.184 ; gain = 219.957
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/avery/AppData/Roaming/Xilinx/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/utils_1/imports/synth_1/rom_ctrl.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/utils_1/imports/synth_1/rom_ctrl.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top rom_ctrl -part xczu3eg-sfvc784-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sfvc784-2-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4644
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1778.734 ; gain = 209.098
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'rom_ctrl' [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.sv:4]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'rom_ctrl' (0#1) [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.sv:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1895.387 ; gain = 325.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1895.387 ; gain = 325.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1895.387 ; gain = 325.750
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1895.387 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc]
+WARNING: [Vivado 12-584] No ports matched 'addr_oneshot_0[0]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr_oneshot_0[1]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr_oneshot_0[2]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr_oneshot_0[3]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr_oneshot_0[4]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr_oneshot_0[5]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr_oneshot_0[6]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr_oneshot_0[7]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr_oneshot_0[0]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr_oneshot_0[1]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr_oneshot_0[2]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr_oneshot_0[3]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr_oneshot_0[4]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr_oneshot_0[5]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr_oneshot_0[6]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr_oneshot_0[7]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dout_0[0]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dout_0[2]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dout_0[3]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dout_0[1]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dout_0[4]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dout_0[5]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dout_0[6]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dout_0[7]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'enable_0'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dout_0[7]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dout_0[6]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dout_0[5]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dout_0[4]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dout_0[3]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dout_0[2]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dout_0[1]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dout_0[0]'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'enable_0'. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.srcs/constrs_1/new/template_constraints2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rom_ctrl_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/rom_ctrl_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1953.773 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1953.785 ; gain = 0.008
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1953.785 ; gain = 384.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sfvc784-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1953.785 ; gain = 384.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1953.785 ; gain = 384.148
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'addr_reg' [C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.sv:30]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1953.785 ; gain = 384.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   8 Input    8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1956.254 ; gain = 386.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2635.809 ; gain = 1066.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2635.809 ; gain = 1066.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2645.379 ; gain = 1075.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2896.336 ; gain = 1326.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2896.336 ; gain = 1326.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2896.336 ; gain = 1326.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2896.336 ; gain = 1326.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2896.336 ; gain = 1326.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2896.336 ; gain = 1326.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     2|
+|3     |LUT2 |     1|
+|4     |LUT3 |     2|
+|5     |LUT4 |     3|
+|6     |LUT5 |     3|
+|7     |FDRE |     4|
+|8     |LD   |     3|
+|9     |IBUF |    10|
+|10    |OBUF |     8|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2896.336 ; gain = 1326.699
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 2896.336 ; gain = 1268.301
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 2896.336 ; gain = 1326.699
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2896.336 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2896.336 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 10 instances
+  LD => LDCE: 3 instances
+
+Synth Design complete | Checksum: f1060b06
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 35 Warnings, 34 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 2896.336 ; gain = 2331.781
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2896.336 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/avery/ece554/minilabs/minilab0/rom_ctrl.runs/synth_1/rom_ctrl.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file rom_ctrl_utilization_synth.rpt -pb rom_ctrl_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 27 15:30:36 2026...

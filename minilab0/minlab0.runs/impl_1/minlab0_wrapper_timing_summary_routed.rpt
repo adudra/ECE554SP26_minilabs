@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
-| Date              : Thu Jan 22 18:12:11 2026
+| Date              : Tue Jan 27 15:51:37 2026
 | Host              : Avery running 64-bit major release  (build 9200)
 | Command           : report_timing_summary -max_paths 10 -routable_nets -report_unconstrained -file minlab0_wrapper_timing_summary_routed.rpt -pb minlab0_wrapper_timing_summary_routed.pb -rpx minlab0_wrapper_timing_summary_routed.rpx -warn_on_violation
 | Design            : minlab0_wrapper
@@ -248,34 +248,34 @@ Period(ns):         10.312
 Sources:            { minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0] }
 
 Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
-Min Period        n/a     FDRE/C   n/a            0.550         10.312      9.762      SLICE_X48Y27  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/C
-Min Period        n/a     FDRE/C   n/a            0.550         10.312      9.762      SLICE_X48Y27  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/C
-Min Period        n/a     FDRE/C   n/a            0.550         10.312      9.762      SLICE_X48Y41  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/C
-Min Period        n/a     FDRE/C   n/a            0.550         10.312      9.762      SLICE_X48Y27  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/C
-Min Period        n/a     FDRE/C   n/a            0.550         10.312      9.762      SLICE_X48Y41  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/C
-Min Period        n/a     FDRE/C   n/a            0.550         10.312      9.762      SLICE_X48Y41  minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/C
-Min Period        n/a     FDRE/C   n/a            0.550         10.312      9.762      SLICE_X48Y41  minlab0_i/rom_ctrl_0/inst/dout_reg[7]/C
-Min Period        n/a     FDRE/C   n/a            0.550         10.312      9.762      SLICE_X48Y27  minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/C
-Low Pulse Width   Slow    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y27  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/C
-Low Pulse Width   Fast    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y27  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/C
-Low Pulse Width   Slow    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y27  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/C
-Low Pulse Width   Fast    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y27  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/C
-Low Pulse Width   Slow    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y41  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/C
-Low Pulse Width   Fast    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y41  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/C
-Low Pulse Width   Slow    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y27  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/C
-Low Pulse Width   Fast    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y27  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/C
-Low Pulse Width   Slow    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y41  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/C
-Low Pulse Width   Fast    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y41  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/C
-High Pulse Width  Slow    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y27  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/C
-High Pulse Width  Fast    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y27  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/C
-High Pulse Width  Slow    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y27  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/C
-High Pulse Width  Fast    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y27  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/C
-High Pulse Width  Slow    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y41  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/C
-High Pulse Width  Fast    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y41  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/C
-High Pulse Width  Slow    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y27  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/C
-High Pulse Width  Fast    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y27  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/C
-High Pulse Width  Slow    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y41  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/C
-High Pulse Width  Fast    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y41  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/C
+Min Period        n/a     FDRE/C   n/a            0.550         10.312      9.762      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/C
+Min Period        n/a     FDRE/C   n/a            0.550         10.312      9.762      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/C
+Min Period        n/a     FDRE/C   n/a            0.550         10.312      9.762      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/C
+Min Period        n/a     FDRE/C   n/a            0.550         10.312      9.762      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/C
+Min Period        n/a     FDRE/C   n/a            0.550         10.312      9.762      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/C
+Min Period        n/a     FDRE/C   n/a            0.550         10.312      9.762      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/C
+Min Period        n/a     FDRE/C   n/a            0.550         10.312      9.762      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[7]/C
+Min Period        n/a     FDRE/C   n/a            0.550         10.312      9.762      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/C
+High Pulse Width  Fast    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/C
+High Pulse Width  Slow    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/C
+High Pulse Width  Fast    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/C
+High Pulse Width  Slow    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.275         5.156       4.881      SLICE_X48Y42  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/C
 
 
 
@@ -297,7 +297,7 @@ Slack:                    inf
   Destination:            minlab0_i/rom_ctrl_0/inst/addr_reg[0]/D
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        1.813ns  (logic 0.715ns (39.447%)  route 1.098ns (60.553%))
+  Data Path Delay:        1.858ns  (logic 0.741ns (39.900%)  route 1.117ns (60.100%))
   Logic Levels:           3  (IBUFCTRL=1 INBUF=1 LUT4=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -309,11 +309,11 @@ Slack:                    inf
                          net (fo=1, routed)           0.000     0.580    addr_oneshot_0_IBUF[5]_inst/OUT
     AD6                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_SNGL_I_O)
                                                       0.000     0.580 r  addr_oneshot_0_IBUF[5]_inst/IBUFCTRL_INST/O
-                         net (fo=4, routed)           1.080     1.660    minlab0_i/rom_ctrl_0/inst/addr_oneshot[5]
-    SLICE_X48Y41         LUT4 (Prop_H5LUT_SLICEM_I1_O)
-                                                      0.135     1.795 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]_i_1/O
-                         net (fo=1, routed)           0.018     1.813    minlab0_i/rom_ctrl_0/inst/addr__0[0]
-    SLICE_X48Y41         LDCE                                         r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/D
+                         net (fo=4, routed)           1.099     1.679    minlab0_i/rom_ctrl_0/inst/addr_oneshot[5]
+    SLICE_X48Y42         LUT4 (Prop_H5LUT_SLICEM_I1_O)
+                                                      0.161     1.840 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]_i_1/O
+                         net (fo=1, routed)           0.018     1.858    minlab0_i/rom_ctrl_0/inst/addr__0[0]
+    SLICE_X48Y42         LDCE                                         r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -322,7 +322,7 @@ Slack:                    inf
   Destination:            minlab0_i/rom_ctrl_0/inst/addr_reg[2]/D
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        1.787ns  (logic 0.685ns (38.342%)  route 1.102ns (61.658%))
+  Data Path Delay:        1.786ns  (logic 0.654ns (36.635%)  route 1.132ns (63.365%))
   Logic Levels:           3  (IBUFCTRL=1 INBUF=1 LUT4=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -334,36 +334,36 @@ Slack:                    inf
                          net (fo=1, routed)           0.000     0.580    addr_oneshot_0_IBUF[5]_inst/OUT
     AD6                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_SNGL_I_O)
                                                       0.000     0.580 r  addr_oneshot_0_IBUF[5]_inst/IBUFCTRL_INST/O
-                         net (fo=4, routed)           1.068     1.648    minlab0_i/rom_ctrl_0/inst/addr_oneshot[5]
-    SLICE_X48Y41         LUT4 (Prop_F5LUT_SLICEM_I3_O)
-                                                      0.105     1.753 r  minlab0_i/rom_ctrl_0/inst/addr_reg[2]_i_1/O
-                         net (fo=1, routed)           0.034     1.787    minlab0_i/rom_ctrl_0/inst/addr__0[2]
-    SLICE_X48Y41         LDCE                                         r  minlab0_i/rom_ctrl_0/inst/addr_reg[2]/D
+                         net (fo=4, routed)           1.098     1.678    minlab0_i/rom_ctrl_0/inst/addr_oneshot[5]
+    SLICE_X48Y42         LUT4 (Prop_F5LUT_SLICEM_I3_O)
+                                                      0.074     1.752 r  minlab0_i/rom_ctrl_0/inst/addr_reg[2]_i_1/O
+                         net (fo=1, routed)           0.034     1.786    minlab0_i/rom_ctrl_0/inst/addr__0[2]
+    SLICE_X48Y42         LDCE                                         r  minlab0_i/rom_ctrl_0/inst/addr_reg[2]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 addr_oneshot_0[7]
+  Source:                 addr_oneshot_0[6]
                             (input port)
   Destination:            minlab0_i/rom_ctrl_0/inst/addr_reg[1]/D
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        1.647ns  (logic 0.711ns (43.147%)  route 0.936ns (56.853%))
+  Data Path Delay:        1.669ns  (logic 0.736ns (44.130%)  route 0.932ns (55.870%))
   Logic Levels:           3  (IBUFCTRL=1 INBUF=1 LUT4=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    AD2                                               0.000     0.000 r  addr_oneshot_0[7] (IN)
-                         net (fo=0)                   0.000     0.000    addr_oneshot_0_IBUF[7]_inst/I
-    AD2                  INBUF (Prop_INBUF_HPIOB_M_PAD_O)
-                                                      0.599     0.599 r  addr_oneshot_0_IBUF[7]_inst/INBUF_INST/O
-                         net (fo=1, routed)           0.000     0.599    addr_oneshot_0_IBUF[7]_inst/OUT
-    AD2                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
-                                                      0.000     0.599 r  addr_oneshot_0_IBUF[7]_inst/IBUFCTRL_INST/O
-                         net (fo=5, routed)           0.913     1.512    minlab0_i/rom_ctrl_0/inst/addr_oneshot[7]
-    SLICE_X48Y41         LUT4 (Prop_G5LUT_SLICEM_I0_O)
-                                                      0.112     1.624 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]_i_1/O
-                         net (fo=1, routed)           0.023     1.647    minlab0_i/rom_ctrl_0/inst/addr__0[1]
-    SLICE_X48Y41         LDCE                                         r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/D
+    AD1                                               0.000     0.000 r  addr_oneshot_0[6] (IN)
+                         net (fo=0)                   0.000     0.000    addr_oneshot_0_IBUF[6]_inst/I
+    AD1                  INBUF (Prop_INBUF_HPIOB_S_PAD_O)
+                                                      0.599     0.599 r  addr_oneshot_0_IBUF[6]_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.599    addr_oneshot_0_IBUF[6]_inst/OUT
+    AD1                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_S_I_O)
+                                                      0.000     0.599 r  addr_oneshot_0_IBUF[6]_inst/IBUFCTRL_INST/O
+                         net (fo=4, routed)           0.909     1.509    minlab0_i/rom_ctrl_0/inst/addr_oneshot[6]
+    SLICE_X48Y42         LUT4 (Prop_G5LUT_SLICEM_I1_O)
+                                                      0.137     1.646 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]_i_1/O
+                         net (fo=1, routed)           0.023     1.669    minlab0_i/rom_ctrl_0/inst/addr__0[1]
+    SLICE_X48Y42         LDCE                                         r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
 
@@ -378,7 +378,7 @@ Slack:                    inf
   Destination:            minlab0_i/rom_ctrl_0/inst/addr_reg[0]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.524ns  (logic 0.180ns (34.451%)  route 0.343ns (65.549%))
+  Data Path Delay:        0.505ns  (logic 0.180ns (35.774%)  route 0.324ns (64.226%))
   Logic Levels:           3  (IBUFCTRL=1 INBUF=1 LUT4=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -390,36 +390,11 @@ Slack:                    inf
                          net (fo=1, routed)           0.000     0.147    addr_oneshot_0_IBUF[3]_inst/OUT
     AC2                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_S_I_O)
                                                       0.000     0.147 r  addr_oneshot_0_IBUF[3]_inst/IBUFCTRL_INST/O
-                         net (fo=4, routed)           0.337     0.485    minlab0_i/rom_ctrl_0/inst/addr_oneshot[3]
-    SLICE_X48Y41         LUT4 (Prop_H5LUT_SLICEM_I3_O)
-                                                      0.033     0.518 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]_i_1/O
-                         net (fo=1, routed)           0.006     0.524    minlab0_i/rom_ctrl_0/inst/addr__0[0]
-    SLICE_X48Y41         LDCE                                         r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 addr_oneshot_0[6]
-                            (input port)
-  Destination:            minlab0_i/rom_ctrl_0/inst/addr_reg[2]/D
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.527ns  (logic 0.176ns (33.317%)  route 0.351ns (66.683%))
-  Logic Levels:           3  (IBUFCTRL=1 INBUF=1 LUT4=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    AD1                                               0.000     0.000 r  addr_oneshot_0[6] (IN)
-                         net (fo=0)                   0.000     0.000    addr_oneshot_0_IBUF[6]_inst/I
-    AD1                  INBUF (Prop_INBUF_HPIOB_S_PAD_O)
-                                                      0.152     0.152 r  addr_oneshot_0_IBUF[6]_inst/INBUF_INST/O
-                         net (fo=1, routed)           0.000     0.152    addr_oneshot_0_IBUF[6]_inst/OUT
-    AD1                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_S_I_O)
-                                                      0.000     0.152 r  addr_oneshot_0_IBUF[6]_inst/IBUFCTRL_INST/O
-                         net (fo=4, routed)           0.342     0.494    minlab0_i/rom_ctrl_0/inst/addr_oneshot[6]
-    SLICE_X48Y41         LUT4 (Prop_F5LUT_SLICEM_I1_O)
-                                                      0.024     0.518 r  minlab0_i/rom_ctrl_0/inst/addr_reg[2]_i_1/O
-                         net (fo=1, routed)           0.009     0.527    minlab0_i/rom_ctrl_0/inst/addr__0[2]
-    SLICE_X48Y41         LDCE                                         r  minlab0_i/rom_ctrl_0/inst/addr_reg[2]/D
+                         net (fo=4, routed)           0.318     0.466    minlab0_i/rom_ctrl_0/inst/addr_oneshot[3]
+    SLICE_X48Y42         LUT4 (Prop_H5LUT_SLICEM_I3_O)
+                                                      0.033     0.499 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]_i_1/O
+                         net (fo=1, routed)           0.006     0.505    minlab0_i/rom_ctrl_0/inst/addr__0[0]
+    SLICE_X48Y42         LDCE                                         r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -428,7 +403,7 @@ Slack:                    inf
   Destination:            minlab0_i/rom_ctrl_0/inst/addr_reg[1]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.528ns  (logic 0.182ns (34.569%)  route 0.345ns (65.431%))
+  Data Path Delay:        0.509ns  (logic 0.182ns (35.886%)  route 0.326ns (64.114%))
   Logic Levels:           3  (IBUFCTRL=1 INBUF=1 LUT4=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -440,11 +415,36 @@ Slack:                    inf
                          net (fo=1, routed)           0.000     0.147    addr_oneshot_0_IBUF[3]_inst/OUT
     AC2                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_S_I_O)
                                                       0.000     0.147 r  addr_oneshot_0_IBUF[3]_inst/IBUFCTRL_INST/O
-                         net (fo=4, routed)           0.337     0.485    minlab0_i/rom_ctrl_0/inst/addr_oneshot[3]
-    SLICE_X48Y41         LUT4 (Prop_G5LUT_SLICEM_I3_O)
-                                                      0.035     0.520 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]_i_1/O
-                         net (fo=1, routed)           0.008     0.528    minlab0_i/rom_ctrl_0/inst/addr__0[1]
-    SLICE_X48Y41         LDCE                                         r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/D
+                         net (fo=4, routed)           0.318     0.466    minlab0_i/rom_ctrl_0/inst/addr_oneshot[3]
+    SLICE_X48Y42         LUT4 (Prop_G5LUT_SLICEM_I3_O)
+                                                      0.035     0.501 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]_i_1/O
+                         net (fo=1, routed)           0.008     0.509    minlab0_i/rom_ctrl_0/inst/addr__0[1]
+    SLICE_X48Y42         LDCE                                         r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 addr_oneshot_0[7]
+                            (input port)
+  Destination:            minlab0_i/rom_ctrl_0/inst/addr_reg[2]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.551ns  (logic 0.193ns (34.967%)  route 0.359ns (65.033%))
+  Logic Levels:           3  (IBUFCTRL=1 INBUF=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    AD2                                               0.000     0.000 r  addr_oneshot_0[7] (IN)
+                         net (fo=0)                   0.000     0.000    addr_oneshot_0_IBUF[7]_inst/I
+    AD2                  INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.151     0.151 r  addr_oneshot_0_IBUF[7]_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.151    addr_oneshot_0_IBUF[7]_inst/OUT
+    AD2                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.151 r  addr_oneshot_0_IBUF[7]_inst/IBUFCTRL_INST/O
+                         net (fo=5, routed)           0.350     0.500    minlab0_i/rom_ctrl_0/inst/addr_oneshot[7]
+    SLICE_X48Y42         LUT4 (Prop_F5LUT_SLICEM_I0_O)
+                                                      0.042     0.542 r  minlab0_i/rom_ctrl_0/inst/addr_reg[2]_i_1/O
+                         net (fo=1, routed)           0.009     0.551    minlab0_i/rom_ctrl_0/inst/addr__0[2]
+    SLICE_X48Y42         LDCE                                         r  minlab0_i/rom_ctrl_0/inst/addr_reg[2]/D
   -------------------------------------------------------------------    -------------------
 
 
@@ -464,54 +464,19 @@ Min Delay             8 Endpoints
 Max Delay Paths
 --------------------------------------------------------------------------------------
 Slack:                    inf
-  Source:                 minlab0_i/rom_ctrl_0/inst/dout_reg[4]/C
-                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
-  Destination:            dout_0[4]
-                            (output port)
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        3.300ns  (logic 2.372ns (71.881%)  route 0.928ns (28.119%))
-  Logic Levels:           1  (OBUF=1)
-  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter     (TSJ):    0.050ns
-    Discrete Jitter          (DJ):    0.310ns
-    Phase Error              (PE):    0.000ns
-  Clock Net Delay (Source):      1.913ns (routing 1.052ns, distribution 0.861ns)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_pl_0 rise edge)
-                                                      0.000     0.000 r  
-    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
-                         net (fo=1, routed)           0.171     0.171    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
-    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
-                                                      0.028     0.199 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.913     2.112    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X48Y27         FDRE (Prop_EFF_SLICEM_C_Q)
-                                                      0.076     2.188 r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/Q
-                         net (fo=1, routed)           0.928     3.116    dout_0_OBUF[4]
-    AH11                 OBUF (Prop_OUTBUF_HDIOB_S_I_O)
-                                                      2.296     5.412 r  dout_0_OBUF[4]_inst/O
-                         net (fo=0)                   0.000     5.412    dout_0[4]
-    AH11                                                              r  dout_0[4] (OUT)
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
   Source:                 minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/C
                             (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
   Destination:            dout_0[2]
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        2.312ns  (logic 0.905ns (39.152%)  route 1.407ns (60.848%))
+  Data Path Delay:        2.170ns  (logic 0.904ns (41.668%)  route 1.266ns (58.332%))
   Logic Levels:           1  (OBUF=1)
   Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.050ns
     Discrete Jitter          (DJ):    0.310ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Source):      1.917ns (routing 1.052ns, distribution 0.865ns)
+  Clock Net Delay (Source):      1.918ns (routing 1.052ns, distribution 0.866ns)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
@@ -521,121 +486,16 @@ Slack:                    inf
                          net (fo=1, routed)           0.171     0.171    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
     BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.028     0.199 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.917     2.116    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/C
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.918     2.117    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         FDRE (Prop_BFF_SLICEM_C_Q)
-                                                      0.078     2.194 r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/Q
-                         net (fo=1, routed)           1.407     3.601    lopt_4
+    SLICE_X48Y42         FDRE (Prop_CFF2_SLICEM_C_Q)
+                                                      0.077     2.194 r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/Q
+                         net (fo=1, routed)           1.266     3.460    lopt_4
     AH2                  OBUF (Prop_OUTBUF_HPIOB_M_I_O)
-                                                      0.827     4.428 r  dout_0_OBUF[2]_inst/O
-                         net (fo=0)                   0.000     4.428    dout_0[2]
+                                                      0.827     4.287 r  dout_0_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     4.287    dout_0[2]
     AH2                                                               r  dout_0[2] (OUT)
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 minlab0_i/rom_ctrl_0/inst/dout_reg[7]/C
-                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
-  Destination:            dout_0[7]
-                            (output port)
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        2.252ns  (logic 0.890ns (39.529%)  route 1.362ns (60.471%))
-  Logic Levels:           1  (OBUF=1)
-  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter     (TSJ):    0.050ns
-    Discrete Jitter          (DJ):    0.310ns
-    Phase Error              (PE):    0.000ns
-  Clock Net Delay (Source):      1.917ns (routing 1.052ns, distribution 0.865ns)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_pl_0 rise edge)
-                                                      0.000     0.000 r  
-    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
-                         net (fo=1, routed)           0.171     0.171    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
-    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
-                                                      0.028     0.199 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.917     2.116    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         FDRE (Prop_BFF2_SLICEM_C_Q)
-                                                      0.080     2.196 r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]/Q
-                         net (fo=1, routed)           1.362     3.558    dout_0_OBUF[7]
-    AF2                  OBUF (Prop_OUTBUF_HPIOB_S_I_O)
-                                                      0.810     4.368 r  dout_0_OBUF[7]_inst/O
-                         net (fo=0)                   0.000     4.368    dout_0[7]
-    AF2                                                               r  dout_0[7] (OUT)
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 minlab0_i/rom_ctrl_0/inst/dout_reg[5]/C
-                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
-  Destination:            dout_0[5]
-                            (output port)
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        2.055ns  (logic 0.901ns (43.834%)  route 1.154ns (56.166%))
-  Logic Levels:           1  (OBUF=1)
-  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter     (TSJ):    0.050ns
-    Discrete Jitter          (DJ):    0.310ns
-    Phase Error              (PE):    0.000ns
-  Clock Net Delay (Source):      1.917ns (routing 1.052ns, distribution 0.865ns)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_pl_0 rise edge)
-                                                      0.000     0.000 r  
-    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
-                         net (fo=1, routed)           0.171     0.171    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
-    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
-                                                      0.028     0.199 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.917     2.116    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         FDRE (Prop_AFF_SLICEM_C_Q)
-                                                      0.077     2.193 r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/Q
-                         net (fo=1, routed)           1.154     3.347    dout_0_OBUF[5]
-    AE4                  OBUF (Prop_OUTBUF_HPIOB_SNGL_I_O)
-                                                      0.824     4.171 r  dout_0_OBUF[5]_inst/O
-                         net (fo=0)                   0.000     4.171    dout_0[5]
-    AE4                                                               r  dout_0[5] (OUT)
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 minlab0_i/rom_ctrl_0/inst/dout_reg[6]/C
-                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
-  Destination:            dout_0[6]
-                            (output port)
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        1.992ns  (logic 0.899ns (45.133%)  route 1.093ns (54.867%))
-  Logic Levels:           1  (OBUF=1)
-  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter     (TSJ):    0.050ns
-    Discrete Jitter          (DJ):    0.310ns
-    Phase Error              (PE):    0.000ns
-  Clock Net Delay (Source):      1.917ns (routing 1.052ns, distribution 0.865ns)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_pl_0 rise edge)
-                                                      0.000     0.000 r  
-    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
-                         net (fo=1, routed)           0.171     0.171    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
-    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
-                                                      0.028     0.199 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.917     2.116    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         FDRE (Prop_AFF2_SLICEM_C_Q)
-                                                      0.080     2.196 r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/Q
-                         net (fo=1, routed)           1.093     3.289    dout_0_OBUF[6]
-    AG1                  OBUF (Prop_OUTBUF_HPIOB_S_I_O)
-                                                      0.819     4.108 r  dout_0_OBUF[6]_inst/O
-                         net (fo=0)                   0.000     4.108    dout_0[6]
-    AG1                                                               r  dout_0[6] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -645,13 +505,13 @@ Slack:                    inf
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        1.996ns  (logic 0.857ns (42.924%)  route 1.139ns (57.076%))
+  Data Path Delay:        2.152ns  (logic 0.861ns (39.998%)  route 1.291ns (60.002%))
   Logic Levels:           1  (OBUF=1)
   Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.050ns
     Discrete Jitter          (DJ):    0.310ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Source):      1.913ns (routing 1.052ns, distribution 0.861ns)
+  Clock Net Delay (Source):      1.918ns (routing 1.052ns, distribution 0.866ns)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
@@ -661,16 +521,51 @@ Slack:                    inf
                          net (fo=1, routed)           0.171     0.171    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
     BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.028     0.199 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.913     2.112    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/C
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.918     2.117    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X48Y27         FDRE (Prop_FFF_SLICEM_C_Q)
-                                                      0.076     2.188 r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/Q
-                         net (fo=1, routed)           1.139     3.327    lopt_2
+    SLICE_X48Y42         FDRE (Prop_BFF2_SLICEM_C_Q)
+                                                      0.080     2.197 r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/Q
+                         net (fo=1, routed)           1.291     3.488    lopt_2
     AE7                  OBUF (Prop_OUTBUF_HPIOB_S_I_O)
-                                                      0.781     4.108 r  dout_0_OBUF[1]_inst/O
-                         net (fo=0)                   0.000     4.108    dout_0[1]
+                                                      0.781     4.269 r  dout_0_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     4.269    dout_0[1]
     AE7                                                               r  dout_0[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 minlab0_i/rom_ctrl_0/inst/dout_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
+  Destination:            dout_0[5]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.106ns  (logic 0.902ns (42.820%)  route 1.204ns (57.180%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.310ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.918ns (routing 1.052ns, distribution 0.866ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.171     0.171    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.028     0.199 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.918     2.117    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y42         FDRE (Prop_BFF_SLICEM_C_Q)
+                                                      0.078     2.195 r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/Q
+                         net (fo=1, routed)           1.204     3.399    dout_0_OBUF[5]
+    AE4                  OBUF (Prop_OUTBUF_HPIOB_SNGL_I_O)
+                                                      0.824     4.223 r  dout_0_OBUF[5]_inst/O
+                         net (fo=0)                   0.000     4.223    dout_0[5]
+    AE4                                                               r  dout_0[5] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -680,13 +575,13 @@ Slack:                    inf
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        1.862ns  (logic 0.869ns (46.658%)  route 0.993ns (53.342%))
+  Data Path Delay:        2.023ns  (logic 0.870ns (42.993%)  route 1.153ns (57.007%))
   Logic Levels:           1  (OBUF=1)
   Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.050ns
     Discrete Jitter          (DJ):    0.310ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Source):      1.913ns (routing 1.052ns, distribution 0.861ns)
+  Clock Net Delay (Source):      1.918ns (routing 1.052ns, distribution 0.866ns)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
@@ -696,15 +591,15 @@ Slack:                    inf
                          net (fo=1, routed)           0.171     0.171    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
     BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.028     0.199 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.913     2.112    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/C
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.918     2.117    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X48Y27         FDRE (Prop_FFF2_SLICEM_C_Q)
-                                                      0.079     2.191 r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/Q
-                         net (fo=1, routed)           0.993     3.184    lopt_6
+    SLICE_X48Y42         FDRE (Prop_DFF2_SLICEM_C_Q)
+                                                      0.080     2.197 r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/Q
+                         net (fo=1, routed)           1.153     3.350    lopt_6
     AE5                  OBUF (Prop_OUTBUF_HPIOB_M_I_O)
-                                                      0.790     3.974 r  dout_0_OBUF[3]_inst/O
-                         net (fo=0)                   0.000     3.974    dout_0[3]
+                                                      0.790     4.140 r  dout_0_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     4.140    dout_0[3]
     AE5                                                               r  dout_0[3] (OUT)
   -------------------------------------------------------------------    -------------------
 
@@ -715,13 +610,13 @@ Slack:                    inf
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        1.861ns  (logic 0.869ns (46.706%)  route 0.992ns (53.294%))
+  Data Path Delay:        2.020ns  (logic 0.870ns (43.080%)  route 1.150ns (56.920%))
   Logic Levels:           1  (OBUF=1)
   Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.050ns
     Discrete Jitter          (DJ):    0.310ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Source):      1.913ns (routing 1.052ns, distribution 0.861ns)
+  Clock Net Delay (Source):      1.918ns (routing 1.052ns, distribution 0.866ns)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
@@ -731,16 +626,121 @@ Slack:                    inf
                          net (fo=1, routed)           0.171     0.171    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
     BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.028     0.199 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.913     2.112    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/C
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.918     2.117    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X48Y27         FDRE (Prop_EFF2_SLICEM_C_Q)
-                                                      0.079     2.191 r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/Q
-                         net (fo=1, routed)           0.992     3.183    lopt
+    SLICE_X48Y42         FDRE (Prop_AFF2_SLICEM_C_Q)
+                                                      0.080     2.197 r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/Q
+                         net (fo=1, routed)           1.150     3.347    lopt
     AF5                  OBUF (Prop_OUTBUF_HPIOB_S_I_O)
-                                                      0.790     3.973 r  dout_0_OBUF[0]_inst/O
-                         net (fo=0)                   0.000     3.973    dout_0[0]
+                                                      0.790     4.137 r  dout_0_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     4.137    dout_0[0]
     AF5                                                               r  dout_0[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 minlab0_i/rom_ctrl_0/inst/dout_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
+  Destination:            dout_0[7]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        1.999ns  (logic 0.888ns (44.432%)  route 1.111ns (55.568%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.310ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.918ns (routing 1.052ns, distribution 0.866ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.171     0.171    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.028     0.199 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.918     2.117    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y42         FDRE (Prop_DFF_SLICEM_C_Q)
+                                                      0.078     2.195 r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]/Q
+                         net (fo=1, routed)           1.111     3.306    dout_0_OBUF[7]
+    AF2                  OBUF (Prop_OUTBUF_HPIOB_S_I_O)
+                                                      0.810     4.116 r  dout_0_OBUF[7]_inst/O
+                         net (fo=0)                   0.000     4.116    dout_0[7]
+    AF2                                                               r  dout_0[7] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 minlab0_i/rom_ctrl_0/inst/dout_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
+  Destination:            dout_0[4]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        1.990ns  (logic 0.904ns (45.435%)  route 1.086ns (54.565%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.310ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.918ns (routing 1.052ns, distribution 0.866ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.171     0.171    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.028     0.199 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.918     2.117    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y42         FDRE (Prop_AFF_SLICEM_C_Q)
+                                                      0.077     2.194 r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/Q
+                         net (fo=1, routed)           1.086     3.280    dout_0_OBUF[4]
+    AH1                  OBUF (Prop_OUTBUF_HPIOB_S_I_O)
+                                                      0.827     4.107 r  dout_0_OBUF[4]_inst/O
+                         net (fo=0)                   0.000     4.107    dout_0[4]
+    AH1                                                               r  dout_0[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 minlab0_i/rom_ctrl_0/inst/dout_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
+  Destination:            dout_0[6]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        1.989ns  (logic 0.897ns (45.101%)  route 1.092ns (54.899%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.310ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.918ns (routing 1.052ns, distribution 0.866ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.171     0.171    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.028     0.199 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.918     2.117    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y42         FDRE (Prop_CFF_SLICEM_C_Q)
+                                                      0.078     2.195 r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/Q
+                         net (fo=1, routed)           1.092     3.287    dout_0_OBUF[6]
+    AG1                  OBUF (Prop_OUTBUF_HPIOB_S_I_O)
+                                                      0.819     4.106 r  dout_0_OBUF[6]_inst/O
+                         net (fo=0)                   0.000     4.106    dout_0[6]
+    AG1                                                               r  dout_0[6] (OUT)
   -------------------------------------------------------------------    -------------------
 
 
@@ -750,19 +750,19 @@ Slack:                    inf
 Min Delay Paths
 --------------------------------------------------------------------------------------
 Slack:                    inf
-  Source:                 minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/C
+  Source:                 minlab0_i/rom_ctrl_0/inst/dout_reg[6]/C
                             (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
-  Destination:            dout_0[3]
+  Destination:            dout_0[6]
                             (output port)
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.819ns  (logic 0.404ns (49.313%)  route 0.415ns (50.687%))
+  Data Path Delay:        0.904ns  (logic 0.431ns (47.677%)  route 0.473ns (52.323%))
   Logic Levels:           1  (OBUF=1)
   Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.050ns
     Discrete Jitter          (DJ):    0.310ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Source):      1.050ns (routing 0.571ns, distribution 0.479ns)
+  Clock Net Delay (Source):      1.053ns (routing 0.571ns, distribution 0.482ns)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
@@ -772,16 +772,16 @@ Slack:                    inf
                          net (fo=1, routed)           0.094     0.094    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
     BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.111 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.050     1.161    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/C
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.053     1.164    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X48Y27         FDRE (Prop_FFF2_SLICEM_C_Q)
-                                                      0.040     1.201 r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/Q
-                         net (fo=1, routed)           0.415     1.616    lopt_6
-    AE5                  OBUF (Prop_OUTBUF_HPIOB_M_I_O)
-                                                      0.364     1.980 r  dout_0_OBUF[3]_inst/O
-                         net (fo=0)                   0.000     1.980    dout_0[3]
-    AE5                                                               r  dout_0[3] (OUT)
+    SLICE_X48Y42         FDRE (Prop_CFF_SLICEM_C_Q)
+                                                      0.038     1.202 r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/Q
+                         net (fo=1, routed)           0.473     1.675    dout_0_OBUF[6]
+    AG1                  OBUF (Prop_OUTBUF_HPIOB_S_I_O)
+                                                      0.393     2.068 r  dout_0_OBUF[6]_inst/O
+                         net (fo=0)                   0.000     2.068    dout_0[6]
+    AG1                                                               r  dout_0[6] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -791,13 +791,13 @@ Slack:                    inf
                             (output port)
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.823ns  (logic 0.404ns (49.062%)  route 0.419ns (50.938%))
+  Data Path Delay:        0.905ns  (logic 0.404ns (44.614%)  route 0.501ns (55.386%))
   Logic Levels:           1  (OBUF=1)
   Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.050ns
     Discrete Jitter          (DJ):    0.310ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Source):      1.050ns (routing 0.571ns, distribution 0.479ns)
+  Clock Net Delay (Source):      1.053ns (routing 0.571ns, distribution 0.482ns)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
@@ -807,121 +807,16 @@ Slack:                    inf
                          net (fo=1, routed)           0.094     0.094    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
     BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.111 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.050     1.161    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/C
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.053     1.164    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X48Y27         FDRE (Prop_EFF2_SLICEM_C_Q)
-                                                      0.039     1.200 r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/Q
-                         net (fo=1, routed)           0.419     1.619    lopt
+    SLICE_X48Y42         FDRE (Prop_AFF2_SLICEM_C_Q)
+                                                      0.039     1.203 r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/Q
+                         net (fo=1, routed)           0.501     1.704    lopt
     AF5                  OBUF (Prop_OUTBUF_HPIOB_S_I_O)
-                                                      0.365     1.984 r  dout_0_OBUF[0]_inst/O
-                         net (fo=0)                   0.000     1.984    dout_0[0]
+                                                      0.365     2.069 r  dout_0_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     2.069    dout_0[0]
     AF5                                                               r  dout_0[0] (OUT)
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/C
-                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
-  Destination:            dout_0[1]
-                            (output port)
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.885ns  (logic 0.392ns (44.285%)  route 0.493ns (55.715%))
-  Logic Levels:           1  (OBUF=1)
-  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter     (TSJ):    0.050ns
-    Discrete Jitter          (DJ):    0.310ns
-    Phase Error              (PE):    0.000ns
-  Clock Net Delay (Source):      1.050ns (routing 0.571ns, distribution 0.479ns)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_pl_0 rise edge)
-                                                      0.000     0.000 r  
-    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
-                         net (fo=1, routed)           0.094     0.094    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
-    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
-                                                      0.017     0.111 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.050     1.161    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X48Y27         FDRE (Prop_FFF_SLICEM_C_Q)
-                                                      0.037     1.198 r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/Q
-                         net (fo=1, routed)           0.493     1.691    lopt_2
-    AE7                  OBUF (Prop_OUTBUF_HPIOB_S_I_O)
-                                                      0.355     2.046 r  dout_0_OBUF[1]_inst/O
-                         net (fo=0)                   0.000     2.046    dout_0[1]
-    AE7                                                               r  dout_0[1] (OUT)
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 minlab0_i/rom_ctrl_0/inst/dout_reg[6]/C
-                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
-  Destination:            dout_0[6]
-                            (output port)
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.908ns  (logic 0.432ns (47.577%)  route 0.476ns (52.423%))
-  Logic Levels:           1  (OBUF=1)
-  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter     (TSJ):    0.050ns
-    Discrete Jitter          (DJ):    0.310ns
-    Phase Error              (PE):    0.000ns
-  Clock Net Delay (Source):      1.052ns (routing 0.571ns, distribution 0.481ns)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_pl_0 rise edge)
-                                                      0.000     0.000 r  
-    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
-                         net (fo=1, routed)           0.094     0.094    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
-    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
-                                                      0.017     0.111 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.052     1.163    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         FDRE (Prop_AFF2_SLICEM_C_Q)
-                                                      0.039     1.202 r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/Q
-                         net (fo=1, routed)           0.476     1.678    dout_0_OBUF[6]
-    AG1                  OBUF (Prop_OUTBUF_HPIOB_S_I_O)
-                                                      0.393     2.071 r  dout_0_OBUF[6]_inst/O
-                         net (fo=0)                   0.000     2.071    dout_0[6]
-    AG1                                                               r  dout_0[6] (OUT)
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 minlab0_i/rom_ctrl_0/inst/dout_reg[5]/C
-                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
-  Destination:            dout_0[5]
-                            (output port)
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.942ns  (logic 0.435ns (46.206%)  route 0.507ns (53.794%))
-  Logic Levels:           1  (OBUF=1)
-  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter     (TSJ):    0.050ns
-    Discrete Jitter          (DJ):    0.310ns
-    Phase Error              (PE):    0.000ns
-  Clock Net Delay (Source):      1.052ns (routing 0.571ns, distribution 0.481ns)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_pl_0 rise edge)
-                                                      0.000     0.000 r  
-    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
-                         net (fo=1, routed)           0.094     0.094    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
-    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
-                                                      0.017     0.111 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.052     1.163    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         FDRE (Prop_AFF_SLICEM_C_Q)
-                                                      0.038     1.201 r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/Q
-                         net (fo=1, routed)           0.507     1.708    dout_0_OBUF[5]
-    AE4                  OBUF (Prop_OUTBUF_HPIOB_SNGL_I_O)
-                                                      0.397     2.105 r  dout_0_OBUF[5]_inst/O
-                         net (fo=0)                   0.000     2.105    dout_0[5]
-    AE4                                                               r  dout_0[5] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -931,13 +826,13 @@ Slack:                    inf
                             (output port)
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        1.015ns  (logic 0.424ns (41.792%)  route 0.591ns (58.208%))
+  Data Path Delay:        0.907ns  (logic 0.423ns (46.656%)  route 0.484ns (53.344%))
   Logic Levels:           1  (OBUF=1)
   Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.050ns
     Discrete Jitter          (DJ):    0.310ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Source):      1.052ns (routing 0.571ns, distribution 0.481ns)
+  Clock Net Delay (Source):      1.053ns (routing 0.571ns, distribution 0.482ns)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
@@ -947,32 +842,32 @@ Slack:                    inf
                          net (fo=1, routed)           0.094     0.094    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
     BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.111 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.052     1.163    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]/C
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.053     1.164    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         FDRE (Prop_BFF2_SLICEM_C_Q)
-                                                      0.040     1.203 r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]/Q
-                         net (fo=1, routed)           0.591     1.794    dout_0_OBUF[7]
+    SLICE_X48Y42         FDRE (Prop_DFF_SLICEM_C_Q)
+                                                      0.039     1.203 r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]/Q
+                         net (fo=1, routed)           0.484     1.687    dout_0_OBUF[7]
     AF2                  OBUF (Prop_OUTBUF_HPIOB_S_I_O)
-                                                      0.384     2.178 r  dout_0_OBUF[7]_inst/O
-                         net (fo=0)                   0.000     2.178    dout_0[7]
+                                                      0.384     2.071 r  dout_0_OBUF[7]_inst/O
+                         net (fo=0)                   0.000     2.071    dout_0[7]
     AF2                                                               r  dout_0[7] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/C
+  Source:                 minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/C
                             (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
-  Destination:            dout_0[2]
+  Destination:            dout_0[3]
                             (output port)
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        1.056ns  (logic 0.439ns (41.579%)  route 0.617ns (58.421%))
+  Data Path Delay:        0.909ns  (logic 0.405ns (44.539%)  route 0.504ns (55.461%))
   Logic Levels:           1  (OBUF=1)
   Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.050ns
     Discrete Jitter          (DJ):    0.310ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Source):      1.052ns (routing 0.571ns, distribution 0.481ns)
+  Clock Net Delay (Source):      1.053ns (routing 0.571ns, distribution 0.482ns)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
@@ -982,16 +877,16 @@ Slack:                    inf
                          net (fo=1, routed)           0.094     0.094    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
     BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.111 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.052     1.163    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/C
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.053     1.164    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         FDRE (Prop_BFF_SLICEM_C_Q)
-                                                      0.038     1.201 r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/Q
-                         net (fo=1, routed)           0.617     1.818    lopt_4
-    AH2                  OBUF (Prop_OUTBUF_HPIOB_M_I_O)
-                                                      0.401     2.219 r  dout_0_OBUF[2]_inst/O
-                         net (fo=0)                   0.000     2.219    dout_0[2]
-    AH2                                                               r  dout_0[2] (OUT)
+    SLICE_X48Y42         FDRE (Prop_DFF2_SLICEM_C_Q)
+                                                      0.041     1.205 r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/Q
+                         net (fo=1, routed)           0.504     1.709    lopt_6
+    AE5                  OBUF (Prop_OUTBUF_HPIOB_M_I_O)
+                                                      0.364     2.073 r  dout_0_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     2.073    dout_0[3]
+    AE5                                                               r  dout_0[3] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -1001,13 +896,13 @@ Slack:                    inf
                             (output port)
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        1.574ns  (logic 1.131ns (71.860%)  route 0.443ns (28.140%))
+  Data Path Delay:        0.914ns  (logic 0.439ns (48.036%)  route 0.475ns (51.964%))
   Logic Levels:           1  (OBUF=1)
   Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.050ns
     Discrete Jitter          (DJ):    0.310ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Source):      1.050ns (routing 0.571ns, distribution 0.479ns)
+  Clock Net Delay (Source):      1.053ns (routing 0.571ns, distribution 0.482ns)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
@@ -1017,16 +912,121 @@ Slack:                    inf
                          net (fo=1, routed)           0.094     0.094    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
     BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.017     0.111 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.050     1.161    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/C
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.053     1.164    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X48Y27         FDRE (Prop_EFF_SLICEM_C_Q)
-                                                      0.038     1.199 r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/Q
-                         net (fo=1, routed)           0.443     1.642    dout_0_OBUF[4]
-    AH11                 OBUF (Prop_OUTBUF_HDIOB_S_I_O)
-                                                      1.093     2.735 r  dout_0_OBUF[4]_inst/O
-                         net (fo=0)                   0.000     2.735    dout_0[4]
-    AH11                                                              r  dout_0[4] (OUT)
+    SLICE_X48Y42         FDRE (Prop_AFF_SLICEM_C_Q)
+                                                      0.038     1.202 r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/Q
+                         net (fo=1, routed)           0.475     1.677    dout_0_OBUF[4]
+    AH1                  OBUF (Prop_OUTBUF_HPIOB_S_I_O)
+                                                      0.401     2.078 r  dout_0_OBUF[4]_inst/O
+                         net (fo=0)                   0.000     2.078    dout_0[4]
+    AH1                                                               r  dout_0[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 minlab0_i/rom_ctrl_0/inst/dout_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
+  Destination:            dout_0[5]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.947ns  (logic 0.435ns (45.962%)  route 0.512ns (54.038%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.310ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.053ns (routing 0.571ns, distribution 0.482ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.094     0.094    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.017     0.111 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.053     1.164    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y42         FDRE (Prop_BFF_SLICEM_C_Q)
+                                                      0.038     1.202 r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/Q
+                         net (fo=1, routed)           0.512     1.714    dout_0_OBUF[5]
+    AE4                  OBUF (Prop_OUTBUF_HPIOB_SNGL_I_O)
+                                                      0.397     2.111 r  dout_0_OBUF[5]_inst/O
+                         net (fo=0)                   0.000     2.111    dout_0[5]
+    AE4                                                               r  dout_0[5] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
+  Destination:            dout_0[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.968ns  (logic 0.395ns (40.797%)  route 0.573ns (59.203%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.310ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.053ns (routing 0.571ns, distribution 0.482ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.094     0.094    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.017     0.111 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.053     1.164    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y42         FDRE (Prop_BFF2_SLICEM_C_Q)
+                                                      0.040     1.204 r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/Q
+                         net (fo=1, routed)           0.573     1.777    lopt_2
+    AE7                  OBUF (Prop_OUTBUF_HPIOB_S_I_O)
+                                                      0.355     2.132 r  dout_0_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     2.132    dout_0[1]
+    AE7                                                               r  dout_0[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
+  Destination:            dout_0[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        1.010ns  (logic 0.440ns (43.572%)  route 0.570ns (56.428%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.310ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.053ns (routing 0.571ns, distribution 0.482ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.094     0.094    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.017     0.111 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.053     1.164    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y42         FDRE (Prop_CFF2_SLICEM_C_Q)
+                                                      0.039     1.203 r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/Q
+                         net (fo=1, routed)           0.570     1.773    lopt_4
+    AH2                  OBUF (Prop_OUTBUF_HPIOB_M_I_O)
+                                                      0.401     2.174 r  dout_0_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     2.174    dout_0[2]
+    AH2                                                               r  dout_0[2] (OUT)
   -------------------------------------------------------------------    -------------------
 
 
@@ -1048,64 +1048,28 @@ Max Delay Paths
 Slack:                    inf
   Source:                 minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
                             (positive level-sensitive latch)
-  Destination:            minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/D
-                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
-  Path Group:             (none)
-  Path Type:              Setup (Max at Slow Process Corner)
-  Data Path Delay:        0.861ns  (logic 0.278ns (32.278%)  route 0.583ns (67.722%))
-  Logic Levels:           2  (LDCE=1 LUT1=1)
-  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter     (TSJ):    0.050ns
-    Discrete Jitter          (DJ):    0.310ns
-    Phase Error              (PE):    0.000ns
-  Clock Net Delay (Destination): 1.695ns (routing 0.951ns, distribution 0.744ns)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
-    SLICE_X48Y41         LDCE (EnToQ_HFF2_SLICEM_G_Q)
-                                                      0.121     0.121 f  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/Q
-                         net (fo=4, routed)           0.116     0.237    minlab0_i/rom_ctrl_0/inst/addr[0]
-    SLICE_X47Y41         LUT1 (Prop_D5LUT_SLICEL_I0_O)
-                                                      0.157     0.394 r  minlab0_i/rom_ctrl_0/inst/dout[4]_i_1/O
-                         net (fo=2, routed)           0.467     0.861    minlab0_i/rom_ctrl_0/inst/rom[0]
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_pl_0 rise edge)
-                                                      0.000     0.000 r  
-    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
-                         net (fo=1, routed)           0.135     0.135    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
-    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
-                                                      0.025     0.160 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.695     1.855    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/C
-
-Slack:                    inf
-  Source:                 minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
-                            (positive level-sensitive latch)
   Destination:            minlab0_i/rom_ctrl_0/inst/dout_reg[4]/D
                             (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
   Path Group:             (none)
   Path Type:              Setup (Max at Slow Process Corner)
-  Data Path Delay:        0.842ns  (logic 0.278ns (33.006%)  route 0.564ns (66.994%))
+  Data Path Delay:        0.659ns  (logic 0.278ns (42.183%)  route 0.381ns (57.817%))
   Logic Levels:           2  (LDCE=1 LUT1=1)
   Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.050ns
     Discrete Jitter          (DJ):    0.310ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Destination): 1.695ns (routing 0.951ns, distribution 0.744ns)
+  Clock Net Delay (Destination): 1.701ns (routing 0.951ns, distribution 0.750ns)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
-    SLICE_X48Y41         LDCE (EnToQ_HFF2_SLICEM_G_Q)
+    SLICE_X48Y42         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
+    SLICE_X48Y42         LDCE (EnToQ_HFF2_SLICEM_G_Q)
                                                       0.121     0.121 f  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/Q
                          net (fo=4, routed)           0.116     0.237    minlab0_i/rom_ctrl_0/inst/addr[0]
-    SLICE_X47Y41         LUT1 (Prop_D5LUT_SLICEL_I0_O)
+    SLICE_X47Y42         LUT1 (Prop_D5LUT_SLICEL_I0_O)
                                                       0.157     0.394 r  minlab0_i/rom_ctrl_0/inst/dout[4]_i_1/O
-                         net (fo=2, routed)           0.448     0.842    minlab0_i/rom_ctrl_0/inst/rom[0]
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/D
+                         net (fo=2, routed)           0.265     0.659    minlab0_i/rom_ctrl_0/inst/rom[0]
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_pl_0 rise edge)
@@ -1114,152 +1078,8 @@ Slack:                    inf
                          net (fo=1, routed)           0.135     0.135    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
     BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     0.160 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.695     1.855    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/C
-
-Slack:                    inf
-  Source:                 minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
-                            (positive level-sensitive latch)
-  Destination:            minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/D
-                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
-  Path Group:             (none)
-  Path Type:              Setup (Max at Slow Process Corner)
-  Data Path Delay:        0.841ns  (logic 0.267ns (31.761%)  route 0.574ns (68.239%))
-  Logic Levels:           2  (LDCE=1 LUT2=1)
-  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter     (TSJ):    0.050ns
-    Discrete Jitter          (DJ):    0.310ns
-    Phase Error              (PE):    0.000ns
-  Clock Net Delay (Destination): 1.695ns (routing 0.951ns, distribution 0.744ns)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
-    SLICE_X48Y41         LDCE (EnToQ_HFF2_SLICEM_G_Q)
-                                                      0.121     0.121 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/Q
-                         net (fo=4, routed)           0.116     0.237    minlab0_i/rom_ctrl_0/inst/addr[0]
-    SLICE_X47Y41         LUT2 (Prop_D6LUT_SLICEL_I0_O)
-                                                      0.146     0.383 r  minlab0_i/rom_ctrl_0/inst/dout[5]_i_1/O
-                         net (fo=2, routed)           0.458     0.841    minlab0_i/rom_ctrl_0/inst/rom[5]
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_pl_0 rise edge)
-                                                      0.000     0.000 r  
-    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
-                         net (fo=1, routed)           0.135     0.135    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
-    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
-                                                      0.025     0.160 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.695     1.855    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/C
-
-Slack:                    inf
-  Source:                 minlab0_i/rom_ctrl_0/inst/addr_reg[1]/G
-                            (positive level-sensitive latch)
-  Destination:            minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/D
-                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
-  Path Group:             (none)
-  Path Type:              Setup (Max at Slow Process Corner)
-  Data Path Delay:        0.839ns  (logic 0.221ns (26.339%)  route 0.618ns (73.661%))
-  Logic Levels:           2  (LDCE=1 LUT3=1)
-  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter     (TSJ):    0.050ns
-    Discrete Jitter          (DJ):    0.310ns
-    Phase Error              (PE):    0.000ns
-  Clock Net Delay (Destination): 1.695ns (routing 0.951ns, distribution 0.744ns)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/G
-    SLICE_X48Y41         LDCE (EnToQ_GFF2_SLICEM_G_Q)
-                                                      0.123     0.123 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/Q
-                         net (fo=3, routed)           0.185     0.308    minlab0_i/rom_ctrl_0/inst/addr[1]
-    SLICE_X48Y41         LUT3 (Prop_C6LUT_SLICEM_I0_O)
-                                                      0.098     0.406 r  minlab0_i/rom_ctrl_0/inst/dout[7]_i_2/O
-                         net (fo=2, routed)           0.433     0.839    minlab0_i/rom_ctrl_0/inst/rom[7]
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_pl_0 rise edge)
-                                                      0.000     0.000 r  
-    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
-                         net (fo=1, routed)           0.135     0.135    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
-    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
-                                                      0.025     0.160 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.695     1.855    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/C
-
-Slack:                    inf
-  Source:                 minlab0_i/rom_ctrl_0/inst/addr_reg[1]/G
-                            (positive level-sensitive latch)
-  Destination:            minlab0_i/rom_ctrl_0/inst/dout_reg[6]/D
-                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
-  Path Group:             (none)
-  Path Type:              Setup (Max at Slow Process Corner)
-  Data Path Delay:        0.674ns  (logic 0.234ns (34.716%)  route 0.440ns (65.284%))
-  Logic Levels:           2  (LDCE=1 LUT3=1)
-  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter     (TSJ):    0.050ns
-    Discrete Jitter          (DJ):    0.310ns
-    Phase Error              (PE):    0.000ns
-  Clock Net Delay (Destination): 1.700ns (routing 0.951ns, distribution 0.749ns)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/G
-    SLICE_X48Y41         LDCE (EnToQ_GFF2_SLICEM_G_Q)
-                                                      0.123     0.123 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/Q
-                         net (fo=3, routed)           0.185     0.308    minlab0_i/rom_ctrl_0/inst/addr[1]
-    SLICE_X48Y41         LUT3 (Prop_C5LUT_SLICEM_I0_O)
-                                                      0.111     0.419 r  minlab0_i/rom_ctrl_0/inst/dout[6]_i_1/O
-                         net (fo=2, routed)           0.255     0.674    minlab0_i/rom_ctrl_0/inst/rom[6]
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_pl_0 rise edge)
-                                                      0.000     0.000 r  
-    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
-                         net (fo=1, routed)           0.135     0.135    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
-    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
-                                                      0.025     0.160 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.700     1.860    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/C
-
-Slack:                    inf
-  Source:                 minlab0_i/rom_ctrl_0/inst/addr_reg[1]/G
-                            (positive level-sensitive latch)
-  Destination:            minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/D
-                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
-  Path Group:             (none)
-  Path Type:              Setup (Max at Slow Process Corner)
-  Data Path Delay:        0.660ns  (logic 0.234ns (35.453%)  route 0.426ns (64.547%))
-  Logic Levels:           2  (LDCE=1 LUT3=1)
-  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter     (TSJ):    0.050ns
-    Discrete Jitter          (DJ):    0.310ns
-    Phase Error              (PE):    0.000ns
-  Clock Net Delay (Destination): 1.700ns (routing 0.951ns, distribution 0.749ns)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/G
-    SLICE_X48Y41         LDCE (EnToQ_GFF2_SLICEM_G_Q)
-                                                      0.123     0.123 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/Q
-                         net (fo=3, routed)           0.185     0.308    minlab0_i/rom_ctrl_0/inst/addr[1]
-    SLICE_X48Y41         LUT3 (Prop_C5LUT_SLICEM_I0_O)
-                                                      0.111     0.419 r  minlab0_i/rom_ctrl_0/inst/dout[6]_i_1/O
-                         net (fo=2, routed)           0.241     0.660    minlab0_i/rom_ctrl_0/inst/rom[6]
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_pl_0 rise edge)
-                                                      0.000     0.000 r  
-    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
-                         net (fo=1, routed)           0.135     0.135    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
-    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
-                                                      0.025     0.160 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.700     1.860    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/C
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.701     1.861    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/C
 
 Slack:                    inf
   Source:                 minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
@@ -1268,24 +1088,24 @@ Slack:                    inf
                             (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
   Path Group:             (none)
   Path Type:              Setup (Max at Slow Process Corner)
-  Data Path Delay:        0.626ns  (logic 0.267ns (42.631%)  route 0.359ns (57.369%))
+  Data Path Delay:        0.636ns  (logic 0.267ns (41.984%)  route 0.369ns (58.016%))
   Logic Levels:           2  (LDCE=1 LUT2=1)
   Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.050ns
     Discrete Jitter          (DJ):    0.310ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Destination): 1.700ns (routing 0.951ns, distribution 0.749ns)
+  Clock Net Delay (Destination): 1.701ns (routing 0.951ns, distribution 0.750ns)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
-    SLICE_X48Y41         LDCE (EnToQ_HFF2_SLICEM_G_Q)
+    SLICE_X48Y42         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
+    SLICE_X48Y42         LDCE (EnToQ_HFF2_SLICEM_G_Q)
                                                       0.121     0.121 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/Q
                          net (fo=4, routed)           0.116     0.237    minlab0_i/rom_ctrl_0/inst/addr[0]
-    SLICE_X47Y41         LUT2 (Prop_D6LUT_SLICEL_I0_O)
+    SLICE_X47Y42         LUT2 (Prop_D6LUT_SLICEL_I0_O)
                                                       0.146     0.383 r  minlab0_i/rom_ctrl_0/inst/dout[5]_i_1/O
-                         net (fo=2, routed)           0.243     0.626    minlab0_i/rom_ctrl_0/inst/rom[5]
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/D
+                         net (fo=2, routed)           0.253     0.636    minlab0_i/rom_ctrl_0/inst/rom[5]
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_pl_0 rise edge)
@@ -1294,8 +1114,80 @@ Slack:                    inf
                          net (fo=1, routed)           0.135     0.135    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
     BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     0.160 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.700     1.860    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/C
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.701     1.861    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/C
+
+Slack:                    inf
+  Source:                 minlab0_i/rom_ctrl_0/inst/addr_reg[1]/G
+                            (positive level-sensitive latch)
+  Destination:            minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        0.599ns  (logic 0.268ns (44.739%)  route 0.331ns (55.261%))
+  Logic Levels:           2  (LDCE=1 LUT3=1)
+  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.310ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Destination): 1.701ns (routing 0.951ns, distribution 0.750ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y42         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/G
+    SLICE_X48Y42         LDCE (EnToQ_GFF2_SLICEM_G_Q)
+                                                      0.123     0.123 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/Q
+                         net (fo=3, routed)           0.150     0.273    minlab0_i/rom_ctrl_0/inst/addr[1]
+    SLICE_X48Y42         LUT3 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.145     0.418 r  minlab0_i/rom_ctrl_0/inst/dout[7]_i_2/O
+                         net (fo=2, routed)           0.181     0.599    minlab0_i/rom_ctrl_0/inst/rom[7]
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.135     0.135    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.025     0.160 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.701     1.861    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/C
+
+Slack:                    inf
+  Source:                 minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
+                            (positive level-sensitive latch)
+  Destination:            minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        0.586ns  (logic 0.278ns (47.437%)  route 0.308ns (52.563%))
+  Logic Levels:           2  (LDCE=1 LUT1=1)
+  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.310ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Destination): 1.701ns (routing 0.951ns, distribution 0.750ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y42         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
+    SLICE_X48Y42         LDCE (EnToQ_HFF2_SLICEM_G_Q)
+                                                      0.121     0.121 f  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/Q
+                         net (fo=4, routed)           0.116     0.237    minlab0_i/rom_ctrl_0/inst/addr[0]
+    SLICE_X47Y42         LUT1 (Prop_D5LUT_SLICEL_I0_O)
+                                                      0.157     0.394 r  minlab0_i/rom_ctrl_0/inst/dout[4]_i_1/O
+                         net (fo=2, routed)           0.192     0.586    minlab0_i/rom_ctrl_0/inst/rom[0]
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.135     0.135    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.025     0.160 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.701     1.861    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/C
 
 Slack:                    inf
   Source:                 minlab0_i/rom_ctrl_0/inst/addr_reg[1]/G
@@ -1304,24 +1196,24 @@ Slack:                    inf
                             (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
   Path Group:             (none)
   Path Type:              Setup (Max at Slow Process Corner)
-  Data Path Delay:        0.622ns  (logic 0.221ns (35.526%)  route 0.401ns (64.474%))
+  Data Path Delay:        0.569ns  (logic 0.268ns (47.097%)  route 0.301ns (52.903%))
   Logic Levels:           2  (LDCE=1 LUT3=1)
   Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.050ns
     Discrete Jitter          (DJ):    0.310ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Destination): 1.700ns (routing 0.951ns, distribution 0.749ns)
+  Clock Net Delay (Destination): 1.701ns (routing 0.951ns, distribution 0.750ns)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/G
-    SLICE_X48Y41         LDCE (EnToQ_GFF2_SLICEM_G_Q)
+    SLICE_X48Y42         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/G
+    SLICE_X48Y42         LDCE (EnToQ_GFF2_SLICEM_G_Q)
                                                       0.123     0.123 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/Q
-                         net (fo=3, routed)           0.185     0.308    minlab0_i/rom_ctrl_0/inst/addr[1]
-    SLICE_X48Y41         LUT3 (Prop_C6LUT_SLICEM_I0_O)
-                                                      0.098     0.406 r  minlab0_i/rom_ctrl_0/inst/dout[7]_i_2/O
-                         net (fo=2, routed)           0.216     0.622    minlab0_i/rom_ctrl_0/inst/rom[7]
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]/D
+                         net (fo=3, routed)           0.150     0.273    minlab0_i/rom_ctrl_0/inst/addr[1]
+    SLICE_X48Y42         LUT3 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.145     0.418 r  minlab0_i/rom_ctrl_0/inst/dout[7]_i_2/O
+                         net (fo=2, routed)           0.151     0.569    minlab0_i/rom_ctrl_0/inst/rom[7]
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_pl_0 rise edge)
@@ -1330,8 +1222,116 @@ Slack:                    inf
                          net (fo=1, routed)           0.135     0.135    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
     BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.025     0.160 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.700     1.860    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]/C
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.701     1.861    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]/C
+
+Slack:                    inf
+  Source:                 minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
+                            (positive level-sensitive latch)
+  Destination:            minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        0.553ns  (logic 0.267ns (48.286%)  route 0.286ns (51.714%))
+  Logic Levels:           2  (LDCE=1 LUT2=1)
+  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.310ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Destination): 1.701ns (routing 0.951ns, distribution 0.750ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y42         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
+    SLICE_X48Y42         LDCE (EnToQ_HFF2_SLICEM_G_Q)
+                                                      0.121     0.121 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/Q
+                         net (fo=4, routed)           0.116     0.237    minlab0_i/rom_ctrl_0/inst/addr[0]
+    SLICE_X47Y42         LUT2 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.146     0.383 r  minlab0_i/rom_ctrl_0/inst/dout[5]_i_1/O
+                         net (fo=2, routed)           0.170     0.553    minlab0_i/rom_ctrl_0/inst/rom[5]
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.135     0.135    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.025     0.160 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.701     1.861    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/C
+
+Slack:                    inf
+  Source:                 minlab0_i/rom_ctrl_0/inst/addr_reg[1]/G
+                            (positive level-sensitive latch)
+  Destination:            minlab0_i/rom_ctrl_0/inst/dout_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        0.469ns  (logic 0.282ns (60.123%)  route 0.187ns (39.877%))
+  Logic Levels:           2  (LDCE=1 LUT3=1)
+  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.310ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Destination): 1.701ns (routing 0.951ns, distribution 0.750ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y42         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/G
+    SLICE_X48Y42         LDCE (EnToQ_GFF2_SLICEM_G_Q)
+                                                      0.123     0.123 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/Q
+                         net (fo=3, routed)           0.150     0.273    minlab0_i/rom_ctrl_0/inst/addr[1]
+    SLICE_X48Y42         LUT3 (Prop_C5LUT_SLICEM_I0_O)
+                                                      0.159     0.432 r  minlab0_i/rom_ctrl_0/inst/dout[6]_i_1/O
+                         net (fo=2, routed)           0.037     0.469    minlab0_i/rom_ctrl_0/inst/rom[6]
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.135     0.135    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.025     0.160 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.701     1.861    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/C
+
+Slack:                    inf
+  Source:                 minlab0_i/rom_ctrl_0/inst/addr_reg[1]/G
+                            (positive level-sensitive latch)
+  Destination:            minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        0.466ns  (logic 0.282ns (60.510%)  route 0.184ns (39.490%))
+  Logic Levels:           2  (LDCE=1 LUT3=1)
+  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.310ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Destination): 1.701ns (routing 0.951ns, distribution 0.750ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y42         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/G
+    SLICE_X48Y42         LDCE (EnToQ_GFF2_SLICEM_G_Q)
+                                                      0.123     0.123 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/Q
+                         net (fo=3, routed)           0.150     0.273    minlab0_i/rom_ctrl_0/inst/addr[1]
+    SLICE_X48Y42         LUT3 (Prop_C5LUT_SLICEM_I0_O)
+                                                      0.159     0.432 r  minlab0_i/rom_ctrl_0/inst/dout[6]_i_1/O
+                         net (fo=2, routed)           0.034     0.466    minlab0_i/rom_ctrl_0/inst/rom[6]
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.135     0.135    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.025     0.160 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.701     1.861    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/C
 
 
 
@@ -1342,100 +1342,28 @@ Min Delay Paths
 Slack:                    inf
   Source:                 minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
                             (positive level-sensitive latch)
-  Destination:            minlab0_i/rom_ctrl_0/inst/dout_reg[7]/D
-                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
-  Path Group:             (none)
-  Path Type:              Hold (Min at Fast Process Corner)
-  Data Path Delay:        0.247ns  (logic 0.082ns (33.149%)  route 0.165ns (66.851%))
-  Logic Levels:           2  (LDCE=1 LUT3=1)
-  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter     (TSJ):    0.050ns
-    Discrete Jitter          (DJ):    0.310ns
-    Phase Error              (PE):    0.000ns
-  Clock Net Delay (Destination): 1.195ns (routing 0.641ns, distribution 0.554ns)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
-    SLICE_X48Y41         LDCE (EnToQ_HFF2_SLICEM_G_Q)
-                                                      0.060     0.060 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/Q
-                         net (fo=4, routed)           0.078     0.138    minlab0_i/rom_ctrl_0/inst/addr[0]
-    SLICE_X48Y41         LUT3 (Prop_C6LUT_SLICEM_I2_O)
-                                                      0.022     0.160 r  minlab0_i/rom_ctrl_0/inst/dout[7]_i_2/O
-                         net (fo=2, routed)           0.088     0.247    minlab0_i/rom_ctrl_0/inst/rom[7]
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_pl_0 rise edge)
-                                                      0.000     0.000 r  
-    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
-                         net (fo=1, routed)           0.120     0.120    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
-    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
-                                                      0.018     0.138 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.195     1.333    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]/C
-
-Slack:                    inf
-  Source:                 minlab0_i/rom_ctrl_0/inst/addr_reg[1]/G
-                            (positive level-sensitive latch)
-  Destination:            minlab0_i/rom_ctrl_0/inst/dout_reg[5]/D
-                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
-  Path Group:             (none)
-  Path Type:              Hold (Min at Fast Process Corner)
-  Data Path Delay:        0.249ns  (logic 0.096ns (38.515%)  route 0.153ns (61.485%))
-  Logic Levels:           2  (LDCE=1 LUT2=1)
-  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter     (TSJ):    0.050ns
-    Discrete Jitter          (DJ):    0.310ns
-    Phase Error              (PE):    0.000ns
-  Clock Net Delay (Destination): 1.195ns (routing 0.641ns, distribution 0.554ns)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/G
-    SLICE_X48Y41         LDCE (EnToQ_GFF2_SLICEM_G_Q)
-                                                      0.061     0.061 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/Q
-                         net (fo=3, routed)           0.055     0.116    minlab0_i/rom_ctrl_0/inst/addr[1]
-    SLICE_X47Y41         LUT2 (Prop_D6LUT_SLICEL_I1_O)
-                                                      0.035     0.151 r  minlab0_i/rom_ctrl_0/inst/dout[5]_i_1/O
-                         net (fo=2, routed)           0.099     0.249    minlab0_i/rom_ctrl_0/inst/rom[5]
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_pl_0 rise edge)
-                                                      0.000     0.000 r  
-    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
-                         net (fo=1, routed)           0.120     0.120    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
-    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
-                                                      0.018     0.138 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.195     1.333    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/C
-
-Slack:                    inf
-  Source:                 minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
-                            (positive level-sensitive latch)
   Destination:            minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/D
                             (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
   Path Group:             (none)
   Path Type:              Hold (Min at Fast Process Corner)
-  Data Path Delay:        0.253ns  (logic 0.083ns (32.847%)  route 0.170ns (67.153%))
+  Data Path Delay:        0.169ns  (logic 0.083ns (49.205%)  route 0.086ns (50.795%))
   Logic Levels:           2  (LDCE=1 LUT3=1)
   Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.050ns
     Discrete Jitter          (DJ):    0.310ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Destination): 1.195ns (routing 0.641ns, distribution 0.554ns)
+  Clock Net Delay (Destination): 1.196ns (routing 0.641ns, distribution 0.555ns)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
-    SLICE_X48Y41         LDCE (EnToQ_HFF2_SLICEM_G_Q)
+    SLICE_X48Y42         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
+    SLICE_X48Y42         LDCE (EnToQ_HFF2_SLICEM_G_Q)
                                                       0.060     0.060 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/Q
                          net (fo=4, routed)           0.078     0.138    minlab0_i/rom_ctrl_0/inst/addr[0]
-    SLICE_X48Y41         LUT3 (Prop_C5LUT_SLICEM_I2_O)
+    SLICE_X48Y42         LUT3 (Prop_C5LUT_SLICEM_I2_O)
                                                       0.023     0.161 r  minlab0_i/rom_ctrl_0/inst/dout[6]_i_1/O
-                         net (fo=2, routed)           0.092     0.253    minlab0_i/rom_ctrl_0/inst/rom[6]
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/D
+                         net (fo=2, routed)           0.008     0.169    minlab0_i/rom_ctrl_0/inst/rom[6]
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_pl_0 rise edge)
@@ -1444,8 +1372,8 @@ Slack:                    inf
                          net (fo=1, routed)           0.120     0.120    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
     BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.138 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.195     1.333    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/C
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.196     1.334    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]_lopt_replica/C
 
 Slack:                    inf
   Source:                 minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
@@ -1454,24 +1382,24 @@ Slack:                    inf
                             (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
   Path Group:             (none)
   Path Type:              Hold (Min at Fast Process Corner)
-  Data Path Delay:        0.262ns  (logic 0.083ns (31.718%)  route 0.179ns (68.282%))
+  Data Path Delay:        0.170ns  (logic 0.083ns (48.915%)  route 0.087ns (51.085%))
   Logic Levels:           2  (LDCE=1 LUT3=1)
   Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.050ns
     Discrete Jitter          (DJ):    0.310ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Destination): 1.195ns (routing 0.641ns, distribution 0.554ns)
+  Clock Net Delay (Destination): 1.196ns (routing 0.641ns, distribution 0.555ns)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
-    SLICE_X48Y41         LDCE (EnToQ_HFF2_SLICEM_G_Q)
+    SLICE_X48Y42         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
+    SLICE_X48Y42         LDCE (EnToQ_HFF2_SLICEM_G_Q)
                                                       0.060     0.060 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/Q
                          net (fo=4, routed)           0.078     0.138    minlab0_i/rom_ctrl_0/inst/addr[0]
-    SLICE_X48Y41         LUT3 (Prop_C5LUT_SLICEM_I2_O)
+    SLICE_X48Y42         LUT3 (Prop_C5LUT_SLICEM_I2_O)
                                                       0.023     0.161 r  minlab0_i/rom_ctrl_0/inst/dout[6]_i_1/O
-                         net (fo=2, routed)           0.101     0.262    minlab0_i/rom_ctrl_0/inst/rom[6]
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/D
+                         net (fo=2, routed)           0.009     0.170    minlab0_i/rom_ctrl_0/inst/rom[6]
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_pl_0 rise edge)
@@ -1480,34 +1408,34 @@ Slack:                    inf
                          net (fo=1, routed)           0.120     0.120    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
     BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.138 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.195     1.333    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y41         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/C
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.196     1.334    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[6]/C
 
 Slack:                    inf
   Source:                 minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
                             (positive level-sensitive latch)
-  Destination:            minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/D
+  Destination:            minlab0_i/rom_ctrl_0/inst/dout_reg[7]/D
                             (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
   Path Group:             (none)
   Path Type:              Hold (Min at Fast Process Corner)
-  Data Path Delay:        0.356ns  (logic 0.082ns (23.010%)  route 0.274ns (76.990%))
+  Data Path Delay:        0.210ns  (logic 0.082ns (39.107%)  route 0.128ns (60.893%))
   Logic Levels:           2  (LDCE=1 LUT3=1)
   Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.050ns
     Discrete Jitter          (DJ):    0.310ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Destination): 1.193ns (routing 0.641ns, distribution 0.552ns)
+  Clock Net Delay (Destination): 1.196ns (routing 0.641ns, distribution 0.555ns)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
-    SLICE_X48Y41         LDCE (EnToQ_HFF2_SLICEM_G_Q)
+    SLICE_X48Y42         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
+    SLICE_X48Y42         LDCE (EnToQ_HFF2_SLICEM_G_Q)
                                                       0.060     0.060 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/Q
                          net (fo=4, routed)           0.078     0.138    minlab0_i/rom_ctrl_0/inst/addr[0]
-    SLICE_X48Y41         LUT3 (Prop_C6LUT_SLICEM_I2_O)
+    SLICE_X48Y42         LUT3 (Prop_C6LUT_SLICEM_I2_O)
                                                       0.022     0.160 r  minlab0_i/rom_ctrl_0/inst/dout[7]_i_2/O
-                         net (fo=2, routed)           0.197     0.356    minlab0_i/rom_ctrl_0/inst/rom[7]
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/D
+                         net (fo=2, routed)           0.050     0.210    minlab0_i/rom_ctrl_0/inst/rom[7]
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_pl_0 rise edge)
@@ -1516,8 +1444,8 @@ Slack:                    inf
                          net (fo=1, routed)           0.120     0.120    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
     BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.138 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.193     1.331    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/C
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.196     1.334    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]/C
 
 Slack:                    inf
   Source:                 minlab0_i/rom_ctrl_0/inst/addr_reg[1]/G
@@ -1526,24 +1454,24 @@ Slack:                    inf
                             (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
   Path Group:             (none)
   Path Type:              Hold (Min at Fast Process Corner)
-  Data Path Delay:        0.363ns  (logic 0.096ns (26.414%)  route 0.267ns (73.586%))
+  Data Path Delay:        0.214ns  (logic 0.096ns (44.923%)  route 0.118ns (55.077%))
   Logic Levels:           2  (LDCE=1 LUT2=1)
   Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.050ns
     Discrete Jitter          (DJ):    0.310ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Destination): 1.193ns (routing 0.641ns, distribution 0.552ns)
+  Clock Net Delay (Destination): 1.196ns (routing 0.641ns, distribution 0.555ns)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/G
-    SLICE_X48Y41         LDCE (EnToQ_GFF2_SLICEM_G_Q)
+    SLICE_X48Y42         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/G
+    SLICE_X48Y42         LDCE (EnToQ_GFF2_SLICEM_G_Q)
                                                       0.061     0.061 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/Q
                          net (fo=3, routed)           0.055     0.116    minlab0_i/rom_ctrl_0/inst/addr[1]
-    SLICE_X47Y41         LUT2 (Prop_D6LUT_SLICEL_I1_O)
+    SLICE_X47Y42         LUT2 (Prop_D6LUT_SLICEL_I1_O)
                                                       0.035     0.151 r  minlab0_i/rom_ctrl_0/inst/dout[5]_i_1/O
-                         net (fo=2, routed)           0.213     0.363    minlab0_i/rom_ctrl_0/inst/rom[5]
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/D
+                         net (fo=2, routed)           0.063     0.214    minlab0_i/rom_ctrl_0/inst/rom[5]
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_pl_0 rise edge)
@@ -1552,34 +1480,34 @@ Slack:                    inf
                          net (fo=1, routed)           0.120     0.120    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
     BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.138 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.193     1.331    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/C
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.196     1.334    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]_lopt_replica/C
 
 Slack:                    inf
   Source:                 minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
                             (positive level-sensitive latch)
-  Destination:            minlab0_i/rom_ctrl_0/inst/dout_reg[4]/D
+  Destination:            minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/D
                             (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
   Path Group:             (none)
   Path Type:              Hold (Min at Fast Process Corner)
-  Data Path Delay:        0.383ns  (logic 0.117ns (30.519%)  route 0.266ns (69.481%))
-  Logic Levels:           2  (LDCE=1 LUT1=1)
+  Data Path Delay:        0.221ns  (logic 0.082ns (37.157%)  route 0.139ns (62.843%))
+  Logic Levels:           2  (LDCE=1 LUT3=1)
   Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.050ns
     Discrete Jitter          (DJ):    0.310ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Destination): 1.193ns (routing 0.641ns, distribution 0.552ns)
+  Clock Net Delay (Destination): 1.196ns (routing 0.641ns, distribution 0.555ns)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
-    SLICE_X48Y41         LDCE (EnToQ_HFF2_SLICEM_G_Q)
-                                                      0.060     0.060 f  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/Q
-                         net (fo=4, routed)           0.062     0.122    minlab0_i/rom_ctrl_0/inst/addr[0]
-    SLICE_X47Y41         LUT1 (Prop_D5LUT_SLICEL_I0_O)
-                                                      0.057     0.179 r  minlab0_i/rom_ctrl_0/inst/dout[4]_i_1/O
-                         net (fo=2, routed)           0.205     0.383    minlab0_i/rom_ctrl_0/inst/rom[0]
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/D
+    SLICE_X48Y42         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
+    SLICE_X48Y42         LDCE (EnToQ_HFF2_SLICEM_G_Q)
+                                                      0.060     0.060 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/Q
+                         net (fo=4, routed)           0.078     0.138    minlab0_i/rom_ctrl_0/inst/addr[0]
+    SLICE_X48Y42         LUT3 (Prop_C6LUT_SLICEM_I2_O)
+                                                      0.022     0.160 r  minlab0_i/rom_ctrl_0/inst/dout[7]_i_2/O
+                         net (fo=2, routed)           0.061     0.221    minlab0_i/rom_ctrl_0/inst/rom[7]
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_pl_0 rise edge)
@@ -1588,8 +1516,44 @@ Slack:                    inf
                          net (fo=1, routed)           0.120     0.120    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
     BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.138 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.193     1.331    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/C
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.196     1.334    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[7]_lopt_replica/C
+
+Slack:                    inf
+  Source:                 minlab0_i/rom_ctrl_0/inst/addr_reg[1]/G
+                            (positive level-sensitive latch)
+  Destination:            minlab0_i/rom_ctrl_0/inst/dout_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.246ns  (logic 0.096ns (39.072%)  route 0.150ns (60.928%))
+  Logic Levels:           2  (LDCE=1 LUT2=1)
+  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.310ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Destination): 1.196ns (routing 0.641ns, distribution 0.555ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y42         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/G
+    SLICE_X48Y42         LDCE (EnToQ_GFF2_SLICEM_G_Q)
+                                                      0.061     0.061 r  minlab0_i/rom_ctrl_0/inst/addr_reg[1]/Q
+                         net (fo=3, routed)           0.055     0.116    minlab0_i/rom_ctrl_0/inst/addr[1]
+    SLICE_X47Y42         LUT2 (Prop_D6LUT_SLICEL_I1_O)
+                                                      0.035     0.151 r  minlab0_i/rom_ctrl_0/inst/dout[5]_i_1/O
+                         net (fo=2, routed)           0.095     0.246    minlab0_i/rom_ctrl_0/inst/rom[5]
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.120     0.120    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.018     0.138 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.196     1.334    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[5]/C
 
 Slack:                    inf
   Source:                 minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
@@ -1598,24 +1562,24 @@ Slack:                    inf
                             (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
   Path Group:             (none)
   Path Type:              Hold (Min at Fast Process Corner)
-  Data Path Delay:        0.393ns  (logic 0.117ns (29.744%)  route 0.276ns (70.256%))
+  Data Path Delay:        0.257ns  (logic 0.117ns (45.582%)  route 0.140ns (54.418%))
   Logic Levels:           2  (LDCE=1 LUT1=1)
   Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.050ns
     Discrete Jitter          (DJ):    0.310ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Destination): 1.193ns (routing 0.641ns, distribution 0.552ns)
+  Clock Net Delay (Destination): 1.196ns (routing 0.641ns, distribution 0.555ns)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X48Y41         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
-    SLICE_X48Y41         LDCE (EnToQ_HFF2_SLICEM_G_Q)
+    SLICE_X48Y42         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
+    SLICE_X48Y42         LDCE (EnToQ_HFF2_SLICEM_G_Q)
                                                       0.060     0.060 f  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/Q
                          net (fo=4, routed)           0.062     0.122    minlab0_i/rom_ctrl_0/inst/addr[0]
-    SLICE_X47Y41         LUT1 (Prop_D5LUT_SLICEL_I0_O)
+    SLICE_X47Y42         LUT1 (Prop_D5LUT_SLICEL_I0_O)
                                                       0.057     0.179 r  minlab0_i/rom_ctrl_0/inst/dout[4]_i_1/O
-                         net (fo=2, routed)           0.215     0.393    minlab0_i/rom_ctrl_0/inst/rom[0]
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/D
+                         net (fo=2, routed)           0.078     0.257    minlab0_i/rom_ctrl_0/inst/rom[0]
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_pl_0 rise edge)
@@ -1624,8 +1588,44 @@ Slack:                    inf
                          net (fo=1, routed)           0.120     0.120    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
     BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
                                                       0.018     0.138 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
-    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.193     1.331    minlab0_i/rom_ctrl_0/inst/clk
-    SLICE_X48Y27         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/C
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.196     1.334    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]_lopt_replica/C
+
+Slack:                    inf
+  Source:                 minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
+                            (positive level-sensitive latch)
+  Destination:            minlab0_i/rom_ctrl_0/inst/dout_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.156ns period=10.312ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.292ns  (logic 0.117ns (40.112%)  route 0.175ns (59.888%))
+  Logic Levels:           2  (LDCE=1 LUT1=1)
+  Clock Uncertainty:      0.157ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.310ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Destination): 1.196ns (routing 0.641ns, distribution 0.555ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y42         LDCE                         0.000     0.000 r  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/G
+    SLICE_X48Y42         LDCE (EnToQ_HFF2_SLICEM_G_Q)
+                                                      0.060     0.060 f  minlab0_i/rom_ctrl_0/inst/addr_reg[0]/Q
+                         net (fo=4, routed)           0.062     0.122    minlab0_i/rom_ctrl_0/inst/addr[0]
+    SLICE_X47Y42         LUT1 (Prop_D5LUT_SLICEL_I0_O)
+                                                      0.057     0.179 r  minlab0_i/rom_ctrl_0/inst/dout[4]_i_1/O
+                         net (fo=2, routed)           0.113     0.292    minlab0_i/rom_ctrl_0/inst/rom[0]
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  minlab0_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.120     0.120    minlab0_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y58        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.018     0.138 r  minlab0_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y0 (CLOCK_ROOT)    net (fo=8, routed)           1.196     1.334    minlab0_i/rom_ctrl_0/inst/clk
+    SLICE_X48Y42         FDRE                                         r  minlab0_i/rom_ctrl_0/inst/dout_reg[4]/C
 
 
 

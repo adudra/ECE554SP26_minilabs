@@ -1,0 +1,52 @@
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of Minilab0.v was successful.
+# Compile of mac_tb.sv was successful.
+# Compile of fifo_ip2.v was successful.
+# Compile of lpm_add_sub_ip.v was successful.
+# Compile of lpm_mult_ip.v was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.mac_tb
+# vsim -gui work.mac_tb 
+# Start time: 19:04:07 on Jan 29,2026
+# Loading sv_std.std
+# Loading work.mac_tb
+# Loading work.MAC
+# ** Error: (vsim-3063) Port 'en' not found in the connected module (3rd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /mac_tb/imac File: C:/Users/avery/ece554/minilabs/minilab1/mac_tb.sv Line: 13
+# ** Error: (vsim-3063) Port 'clr' not found in the connected module (4th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /mac_tb/imac File: C:/Users/avery/ece554/minilabs/minilab1/mac_tb.sv Line: 13
+# Error loading design
+# End time: 19:04:08 on Jan 29,2026, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 2
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of Minilab0.v was successful.
+# Compile of mac_tb.sv was successful.
+# Compile of fifo_ip2.v was successful.
+# Compile of lpm_add_sub_ip.v was successful.
+# Compile of lpm_mult_ip.v was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.mac_tb
+# vsim -gui work.mac_tb 
+# Start time: 19:04:55 on Jan 29,2026
+# Loading sv_std.std
+# Loading work.mac_tb
+# Loading work.MAC
+add wave -position insertpoint  \
+sim:/mac_tb/Ain \
+sim:/mac_tb/Bin \
+sim:/mac_tb/clk \
+sim:/mac_tb/clr \
+sim:/mac_tb/Cout \
+sim:/mac_tb/en \
+sim:/mac_tb/rst_n
+run -all
+# YAHOO! ALL TESTS PASSED
+# ** Note: $stop    : C:/Users/avery/ece554/minilabs/minilab1/mac_tb.sv(106)
+#    Time: 86 ps  Iteration: 0  Instance: /mac_tb
+# Break in Module mac_tb at C:/Users/avery/ece554/minilabs/minilab1/mac_tb.sv line 106
+# End time: 19:07:17 on Jan 29,2026, Elapsed time: 0:02:22
+# Errors: 0, Warnings: 2
