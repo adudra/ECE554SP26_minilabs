@@ -1,0 +1,149 @@
+module matrix_vect_mult
+#(
+  parameter DEPTH=8,
+  parameter DATA_WIDTH=8
+)
+(
+    input rst_n,
+    input clk,
+
+    output wire [23:0] c_vector [0:DEPTH-1]
+);
+
+reg [DATA_WIDTH-1:0] a_matrix [0:DEPTH-1] [0:DEPTH-1];
+reg [DATA_WIDTH-1:0] b_vector [0:DEPTH-1];
+logic run;
+
+initial begin
+    a_matrix = '{
+        '{8'hbf, 8'h08, 8'h84, 8'h12, 8'h10, 8'ha6, 8'hd6, 8'hdd},
+        '{8'h2e, 8'h5c, 8'h9d, 8'hee, 8'h5d, 8'h4e, 8'hee, 8'h35},
+        '{8'hdb, 8'hab, 8'h13, 8'h80, 8'h6b, 8'hbb, 8'h71, 8'h98},
+        '{8'h3b, 8'h64, 8'h0a, 8'h9a, 8'h67, 8'h5c, 8'heb, 8'ha7},
+        '{8'h9f, 8'hba, 8'hef, 8'h49, 8'h9c, 8'h8b, 8'h69, 8'hc1},
+        '{8'hdc, 8'he8, 8'haa, 8'he6, 8'hce, 8'h59, 8'h5b, 8'hc8},
+        '{8'h19, 8'h8f, 8'h83, 8'h2d, 8'had, 8'h6e, 8'h10, 8'hbc},
+        '{8'h6a, 8'h23, 8'h80, 8'h38, 8'h0d, 8'hba, 8'ha0, 8'he9}
+    };
+    b_vector = '{8'ha8, 8'hfe, 8'h92, 8'h3e, 8'h5c, 8'h0f, 8'h25, 8'hfe};
+end
+
+// MATRIX FIFOS INSTANTIATION //
+wire [7:0] ia_odata [7:0];
+logic [7:0] ia_rden, ia_wren;
+wire [7:0] ia_full, ia_empty;
+wire [7:0] ia_load [7:0];
+FIFO ia_vectors [7:0] (
+    .clk(clk),
+    .rst_n(rst_n),
+    // .rden(ia_rden),
+    .rden(run),
+    .wren(ia_wren),
+    .i_data(8'd1),
+    .o_data(ia_odata),
+    .full(ia_full),
+    .empty(ia_empty)
+);
+
+// VECTOR FIFO INSTANTIATION //
+wire [7:0] ib_odata;
+logic ib_rden, ib_wren;
+wire ib_full, ib_empty;
+FIFO ib_vector(
+    .clk(clk),
+    .rst_n(rst_n),
+    // .rden(ib_rden),
+    .rden(run),
+    .wren(ib_wren),
+    .i_data(1'd1),
+    .o_data(ib_odata),
+    .full(ib_full),
+    .empty(ib_empty)
+);
+
+// MAC INSTANTIATION //
+/*
+reg [7:0] shift_enable;
+logic run;
+always @(posedge clk, negedge rst_n) begin
+    if (!rst_n)
+        shift_enable <= 8'h00;
+    else
+        shift_enable <= {shift_enable[6:0], run};
+end
+
+reg [63:0] shift_data;
+always @(posedge clk, negedge rst_n) begin
+    if (!rst_n)
+        shift_data <= 64'h0;
+    else
+        shift_data <= {shift_data[55:0], ib_odata};
+end
+*/
+
+logic clear;
+genvar i;
+generate
+    for (i = 0; i < 8; ++i) begin 
+        MAC imac(
+            .clk(clk),
+            .rst_n(rst_n),
+            // .En(shift_enable[i]),
+            .En(run),
+            .Clr(clear),
+            .Ain(ia_odata[i]),
+            // .Bin(shift_data[i * 8 :+ 8]),
+            .Bin(ib_odata),
+            .Cout(c_vector[i])
+        );
+    end
+endgenerate
+
+
+// STATE MACHINE //
+typedef enum logic [2:0] {CLEAR, INITA, INITB, BUSY, IDLE} state_t;
+state_t state, next_state;
+always @(posedge clk, negedge rst_n) begin
+    if (!rst_n)
+        state <= CLEAR;
+    else
+        state <= next_state;
+end
+always_comb begin
+    clear = 1'b0;
+    run = 1'b0;
+    // ia_rden = shift_enable;
+    // ia_rden = 8'h00;
+    ia_wren = 8'h00;
+    // ib_rden = 1'b0;
+    ib_wren = 1'b0;
+    next_state = state;
+
+    case (state)
+    CLEAR: begin
+        clear = 1'b1;
+        next_state = INITA;
+    end
+    INITA: begin
+        ia_wren = 8'hff;
+        if (ia_full == 8'hff)
+            next_state = INITB;
+    end
+    INITB: begin
+        ib_wren = 1'b1;
+        if (ib_full)
+            next_state = BUSY;
+    end
+    BUSY: begin
+        run = 1'b1;
+        // ia_rden = 8'hff;
+        // ib_rden = 1'b1;
+        if (ia_empty[7])
+            next_state = IDLE;
+    end
+    IDLE: begin end
+    default: begin end
+    endcase
+end
+
+endmodule

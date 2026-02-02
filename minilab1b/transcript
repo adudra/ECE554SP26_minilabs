@@ -1,0 +1,640 @@
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv failed with 6 errors.
+# Compile of matmul_tb.sv failed with 1 errors.
+# 4 compiles, 2 failed with 7 errors.
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv failed with 1 errors.
+# Compile of matmul_tb.sv failed with 1 errors.
+# 4 compiles, 2 failed with 2 errors.
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv was successful.
+# Compile of matmul_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.matmul_tb
+# vsim -gui work.matmul_tb 
+# Start time: 15:29:31 on Feb 01,2026
+# Loading sv_std.std
+# Loading work.matmul_tb
+# ** Error: (vsim-3033) Instantiation of 'matrix_vect_mul' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /matmul_tb File: C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv Line: 5
+#         Searched libraries:
+#             C:/Users/avery/ece554/minilabs/minilab1b/work
+# Error loading design
+# End time: 15:29:32 on Feb 01,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 8
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv was successful.
+# Compile of matmul_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.matmul_tb
+# vsim -gui work.matmul_tb 
+# Start time: 15:30:16 on Feb 01,2026
+# Loading sv_std.std
+# Loading work.matmul_tb
+# Loading work.matrix_vect_mult
+# Loading work.FIFO
+# Loading work.MAC
+quit -sim
+# End time: 15:30:46 on Feb 01,2026, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 2
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv was successful.
+# Compile of matmul_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.matmul_tb
+# vsim -gui work.matmul_tb 
+# Start time: 15:31:01 on Feb 01,2026
+# Loading sv_std.std
+# Loading work.matmul_tb
+# Loading work.matrix_vect_mult
+# Loading work.FIFO
+# Loading work.MAC
+run -all
+# ** Fatal: Cannot match types for literal init. to type 'reg[7:0]$[0:7]' from type 'bit signed[31:0]'.
+#    Time: 0 ps  Iteration: 0  Process: /matmul_tb/matmul/#INITIAL#17 File: C:/Users/avery/ece554/minilabs/minilab1b/matrix_vect_mult.sv
+# Fatal error in Module matrix_vect_mult at C:/Users/avery/ece554/minilabs/minilab1b/matrix_vect_mult.sv line 18
+# 
+# HDL call sequence:
+# Stopped at C:/Users/avery/ece554/minilabs/minilab1b/matrix_vect_mult.sv 18 Module matrix_vect_mult
+# 
+quit -sim
+# End time: 15:34:22 on Feb 01,2026, Elapsed time: 0:03:21
+# Errors: 1, Warnings: 2
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv was successful.
+# Compile of matmul_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv was successful.
+# Compile of matmul_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.matmul_tb
+# vsim -gui work.matmul_tb 
+# Start time: 15:34:59 on Feb 01,2026
+# Loading sv_std.std
+# Loading work.matmul_tb
+# Loading work.matrix_vect_mult
+# Loading work.FIFO
+# Loading work.MAC
+run -all
+# ** Fatal: Cannot match types for literal init. to type 'reg[7:0]$[0:7]' from type 'bit[7:0]'.
+#    Time: 0 ps  Iteration: 0  Process: /matmul_tb/matmul/#INITIAL#17 File: C:/Users/avery/ece554/minilabs/minilab1b/matrix_vect_mult.sv
+# Fatal error in Module matrix_vect_mult at C:/Users/avery/ece554/minilabs/minilab1b/matrix_vect_mult.sv line 18
+# 
+# HDL call sequence:
+# Stopped at C:/Users/avery/ece554/minilabs/minilab1b/matrix_vect_mult.sv 18 Module matrix_vect_mult
+# 
+quit -sim
+# End time: 15:46:55 on Feb 01,2026, Elapsed time: 0:11:56
+# Errors: 1, Warnings: 3
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv was successful.
+# Compile of matmul_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.matmul_tb
+# vsim -gui work.matmul_tb 
+# Start time: 15:47:29 on Feb 01,2026
+# Loading sv_std.std
+# Loading work.matmul_tb
+# Loading work.matrix_vect_mult
+# Loading work.FIFO
+# Loading work.MAC
+run -all
+# ** Fatal: Cannot match types for literal init. to type 'reg[7:0]$[0:7]' from type 'bit[7:0]'.
+#    Time: 0 ps  Iteration: 0  Process: /matmul_tb/matmul/#INITIAL#17 File: C:/Users/avery/ece554/minilabs/minilab1b/matrix_vect_mult.sv
+# Fatal error in Module matrix_vect_mult at C:/Users/avery/ece554/minilabs/minilab1b/matrix_vect_mult.sv line 18
+# 
+# HDL call sequence:
+# Stopped at C:/Users/avery/ece554/minilabs/minilab1b/matrix_vect_mult.sv 18 Module matrix_vect_mult
+# 
+quit -sim
+# End time: 15:51:11 on Feb 01,2026, Elapsed time: 0:03:42
+# Errors: 1, Warnings: 2
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv was successful.
+# Compile of matmul_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.matmul_tb
+# vsim -gui work.matmul_tb 
+# Start time: 15:51:27 on Feb 01,2026
+# Loading sv_std.std
+# Loading work.matmul_tb
+# Loading work.matrix_vect_mult
+# Loading work.FIFO
+# Loading work.MAC
+run -all
+# ** Fatal: Bit stream casting is only allowed on same size data.
+#    Time: 0 ps  Iteration: 0  Process: /matmul_tb/matmul/#INITIAL#17 File: C:/Users/avery/ece554/minilabs/minilab1b/matrix_vect_mult.sv
+# Fatal error in Module matrix_vect_mult at C:/Users/avery/ece554/minilabs/minilab1b/matrix_vect_mult.sv line 28
+# 
+# HDL call sequence:
+# Stopped at C:/Users/avery/ece554/minilabs/minilab1b/matrix_vect_mult.sv 28 Module matrix_vect_mult
+# 
+quit -sim
+# End time: 15:51:59 on Feb 01,2026, Elapsed time: 0:00:32
+# Errors: 1, Warnings: 2
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv was successful.
+# Compile of matmul_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv was successful.
+# Compile of matmul_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.matmul_tb
+# vsim -gui work.matmul_tb 
+# Start time: 15:52:46 on Feb 01,2026
+# Loading sv_std.std
+# Loading work.matmul_tb
+# Loading work.matrix_vect_mult
+# Loading work.FIFO
+# Loading work.MAC
+run -all
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# ** Note: $stop    : C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv(22)
+#    Time: 305 ps  Iteration: 1  Instance: /matmul_tb
+# Break in Module matmul_tb at C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv line 22
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv was successful.
+# Compile of matmul_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.matmul_tb
+# Loading work.matrix_vect_mult
+# Loading work.FIFO
+# Loading work.MAC
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# ** Note: $stop    : C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv(22)
+#    Time: 305 ps  Iteration: 1  Instance: /matmul_tb
+# Break in Module matmul_tb at C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv line 22
+quit -sim
+# End time: 15:54:11 on Feb 01,2026, Elapsed time: 0:01:25
+# Errors: 0, Warnings: 1
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv was successful.
+# Compile of matmul_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.matmul_tb
+# vsim -gui work.matmul_tb 
+# Start time: 15:54:22 on Feb 01,2026
+# Loading sv_std.std
+# Loading work.matmul_tb
+# Loading work.matrix_vect_mult
+# Loading work.FIFO
+# Loading work.MAC
+run -all
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# ** Note: $stop    : C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv(22)
+#    Time: 305 ps  Iteration: 1  Instance: /matmul_tb
+# Break in Module matmul_tb at C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv line 22
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv was successful.
+# Compile of matmul_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+quit -sim
+# End time: 15:58:36 on Feb 01,2026, Elapsed time: 0:04:14
+# Errors: 0, Warnings: 3
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv was successful.
+# Compile of matmul_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.matmul_tb
+# vsim -gui work.matmul_tb 
+# Start time: 15:58:45 on Feb 01,2026
+# Loading sv_std.std
+# Loading work.matmul_tb
+# Loading work.matrix_vect_mult
+# Loading work.FIFO
+# Loading work.MAC
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'i_data'. The port definition is at: C:/Users/avery/ece554/minilabs/minilab1b/fifo.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /matmul_tb/matmul/ib_vector File: C:/Users/avery/ece554/minilabs/minilab1b/matrix_vect_mult.sv Line: 52
+run -all
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# xxxxxx
+# ** Note: $stop    : C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv(22)
+#    Time: 305 ps  Iteration: 1  Instance: /matmul_tb
+# Break in Module matmul_tb at C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv line 22
+quit -sim
+# End time: 15:59:31 on Feb 01,2026, Elapsed time: 0:00:46
+# Errors: 0, Warnings: 3
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv was successful.
+# Compile of matmul_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.matmul_tb
+# vsim -gui work.matmul_tb 
+# Start time: 15:59:46 on Feb 01,2026
+# Loading sv_std.std
+# Loading work.matmul_tb
+# Loading work.matrix_vect_mult
+# Loading work.FIFO
+# Loading work.MAC
+run -all
+# 000008
+# 000008
+# 000008
+# 000008
+# 000008
+# 000008
+# 000008
+# 000008
+# ** Note: $stop    : C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv(22)
+#    Time: 305 ps  Iteration: 1  Instance: /matmul_tb
+# Break in Module matmul_tb at C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv line 22
+quit -sim
+# End time: 16:04:58 on Feb 01,2026, Elapsed time: 0:05:12
+# Errors: 0, Warnings: 2
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv was successful.
+# Compile of matmul_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.matmul_tb
+# vsim -gui work.matmul_tb 
+# Start time: 16:05:06 on Feb 01,2026
+# Loading sv_std.std
+# Loading work.matmul_tb
+# Loading work.matrix_vect_mult
+# Loading work.FIFO
+# Loading work.MAC
+# ** Warning: (vsim-3008) [CNNODP] - Component name (sum) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /matmul_tb File: C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv Line: 22
+# ** Error: (vsim-3043) Unresolved reference to 'sum' in matmul.sum.
+#    Time: 0 ps  Iteration: 0  Instance: /matmul_tb File: C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv Line: 22
+# Error loading design
+# End time: 16:05:06 on Feb 01,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 3
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv was successful.
+# Compile of matmul_tb.sv failed with 1 errors.
+# 4 compiles, 1 failed with 1 error.
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv was successful.
+# Compile of matmul_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.matmul_tb
+# vsim -gui work.matmul_tb 
+# Start time: 16:08:15 on Feb 01,2026
+# Loading sv_std.std
+# Loading work.matmul_tb
+# Loading work.matrix_vect_mult
+# Loading work.FIFO
+# Loading work.MAC
+run -all
+#        8
+#        8
+#        8
+#        8
+#        8
+#        8
+#        8
+#        8
+#       64
+# ** Note: $stop    : C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv(24)
+#    Time: 305 ps  Iteration: 1  Instance: /matmul_tb
+# Break in Module matmul_tb at C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv line 24
+quit -sim
+# End time: 16:49:12 on Feb 01,2026, Elapsed time: 0:40:57
+# Errors: 0, Warnings: 3
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv failed with 1 errors.
+# Compile of matmul_tb.sv was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv was successful.
+# Compile of matmul_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.matmul_tb
+# vsim -gui work.matmul_tb 
+# Start time: 16:50:27 on Feb 01,2026
+# Loading sv_std.std
+# Loading work.matmul_tb
+# Loading work.matrix_vect_mult
+# Loading work.FIFO
+# Loading work.MAC
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'i_data'. The port definition is at: C:/Users/avery/ece554/minilabs/minilab1b/fifo.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /matmul_tb/matmul/ib_vector File: C:/Users/avery/ece554/minilabs/minilab1b/matrix_vect_mult.sv Line: 71
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv was successful.
+# Compile of matmul_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+quit -sim
+# End time: 16:51:35 on Feb 01,2026, Elapsed time: 0:01:08
+# Errors: 0, Warnings: 5
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv was successful.
+# Compile of matmul_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.matmul_tb
+# vsim -gui work.matmul_tb 
+# Start time: 16:51:54 on Feb 01,2026
+# Loading sv_std.std
+# Loading work.matmul_tb
+# Loading work.matrix_vect_mult
+# Loading work.FIFO
+# Loading work.MAC
+run -all
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+# ** Note: $stop    : C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv(24)
+#    Time: 305 ps  Iteration: 1  Instance: /matmul_tb
+# Break in Module matmul_tb at C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv line 24
+quit -sim
+# End time: 16:53:28 on Feb 01,2026, Elapsed time: 0:01:34
+# Errors: 0, Warnings: 2
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv was successful.
+# Compile of matmul_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.matmul_tb
+# vsim -gui work.matmul_tb 
+# Start time: 16:53:36 on Feb 01,2026
+# Loading sv_std.std
+# Loading work.matmul_tb
+# Loading work.matrix_vect_mult
+# Loading work.FIFO
+# Loading work.MAC
+run -all
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+# ** Note: $stop    : C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv(24)
+#    Time: 305 ps  Iteration: 1  Instance: /matmul_tb
+# Break in Module matmul_tb at C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv line 24
+add wave -position insertpoint  \
+sim:/matmul_tb/matmul/ia_idata
+add wave -position insertpoint  \
+sim:/matmul_tb/matmul/count
+add wave -position insertpoint  \
+sim:/matmul_tb/matmul/state
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+# ** Note: $stop    : C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv(24)
+#    Time: 305 ps  Iteration: 1  Instance: /matmul_tb
+# Break in Module matmul_tb at C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv line 24
+# WARNING: No extended dataflow license exists
+# **** Error: SelectedSignalQ cmd: Dataflow::MessageHandler SelectedSignalQ .main_pane.dataflow.interior.cs.body.pw.df.c sim
+# ****        invalid command name ".main_pane.dataflow.interior.cs.body.pw.df.c.nlv"
+# invalid command name ".main_pane.dataflow.interior.cs.body.pw.df.c.nlv"
+#     while executing
+# "$nlv search -exact netBundle ${sel}"
+#     (method "::vsimwidgets::Dataflow::selectsig_cmd" body line 44)
+#     invoked from within
+# "$nl selectsig_cmd SelectedSignalQ $ns "
+#     (procedure "Dataflow::MessageHandler" line 15)
+#     invoked from within
+# "Dataflow::MessageHandler SelectedSignalQ .main_pane.dataflow.interior.cs.body.pw.df.c sim"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $p $tankNamespace "
+# **** Error: SelectedSignalQ cmd: Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim
+# ****        can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+# can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+#     while executing
+# "set grid $vsimPriv($grid:grid)"
+#     (procedure "ginfo" line 10)
+#     invoked from within
+# "ginfo trees $w"
+#     (procedure "Wave::SelectSigCmd" line 8)
+#     invoked from within
+# "Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $p $tankNamespace "
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+add wave -position insertpoint  \
+sim:/matmul_tb/matmul/ia_wren
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+add wave -position insertpoint  \
+sim:/matmul_tb/matmul/ib_wren
+add wave -position insertpoint  \
+sim:/matmul_tb/matmul/b_vector
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+# ** Note: $stop    : C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv(24)
+#    Time: 305 ps  Iteration: 1  Instance: /matmul_tb
+# Break in Module matmul_tb at C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv line 24
+add wave -position insertpoint  \
+{sim:/matmul_tb/matmul/ia_vectors[0]/i_data}
+add wave -position insertpoint  \
+{sim:/matmul_tb/matmul/genblk1[0]/imac/Bin}
+add wave -position insertpoint  \
+{sim:/matmul_tb/matmul/genblk1[0]/imac/Ain}
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+# ** Note: $stop    : C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv(24)
+#    Time: 305 ps  Iteration: 1  Instance: /matmul_tb
+# Break in Module matmul_tb at C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv line 24
+add wave -position insertpoint  \
+{sim:/matmul_tb/matmul/genblk1[0]/imac/Cout}
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+# ** Note: $stop    : C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv(24)
+#    Time: 305 ps  Iteration: 1  Instance: /matmul_tb
+# Break in Module matmul_tb at C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv line 24
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+add wave -position insertpoint  \
+sim:/matmul_tb/matmul/run
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+# ** Note: $stop    : C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv(24)
+#    Time: 305 ps  Iteration: 1  Instance: /matmul_tb
+# Break in Module matmul_tb at C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv line 24
+add wave -position insertpoint  \
+sim:/matmul_tb/matmul/ib_vector/fifo_mem
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+# ** Note: $stop    : C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv(24)
+#    Time: 305 ps  Iteration: 1  Instance: /matmul_tb
+# Break in Module matmul_tb at C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv line 24
+add wave -position insertpoint  \
+sim:/matmul_tb/matmul/ib_vector/i_data
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+#        x
+# ** Note: $stop    : C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv(24)
+#    Time: 305 ps  Iteration: 1  Instance: /matmul_tb
+# Break in Module matmul_tb at C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv line 24
+quit -sim
+# End time: 18:20:40 on Feb 01,2026, Elapsed time: 1:27:04
+# Errors: 0, Warnings: 1
+# Compile of fifo.sv was successful.
+# Compile of mac.sv was successful.
+# Compile of matrix_vect_mult.sv was successful.
+# Compile of matmul_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.matmul_tb
+# vsim -gui work.matmul_tb 
+# Start time: 18:20:53 on Feb 01,2026
+# Loading sv_std.std
+# Loading work.matmul_tb
+# Loading work.matrix_vect_mult
+# Loading work.FIFO
+# Loading work.MAC
+run -all
+#   117946
+#   128348
+#   209422
+#   182720
+#   108289
+#   146374
+#   100768
+#   122522
+#  1116389
+# ** Note: $stop    : C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv(24)
+#    Time: 215 ps  Iteration: 1  Instance: /matmul_tb
+# Break in Module matmul_tb at C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv line 24

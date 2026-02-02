@@ -1,0 +1,113 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vFIFO
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1769991643
+!i10b 1
+!s100 bRf0a:GeSG3hUbBSJBU5T1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IY@2N>fka6X`;h2Y4[A9@92
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/avery/ece554/minilabs/minilab1b
+w1769974896
+8C:/Users/avery/ece554/minilabs/minilab1b/fifo.sv
+FC:/Users/avery/ece554/minilabs/minilab1b/fifo.sv
+!i122 90
+L0 1 76
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1769991643.000000
+!s107 C:/Users/avery/ece554/minilabs/minilab1b/fifo.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/avery/ece554/minilabs/minilab1b/fifo.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+n@f@i@f@o
+vMAC
+R0
+R1
+!i10b 1
+!s100 LbVQW=QkMRATN[jXWmhTG0
+R2
+IU@bERfn9Rn?^za]YL6okE0
+R3
+S1
+R4
+w1769735035
+8C:/Users/avery/ece554/minilabs/minilab1b/mac.sv
+FC:/Users/avery/ece554/minilabs/minilab1b/mac.sv
+!i122 91
+L0 1 41
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/avery/ece554/minilabs/minilab1b/mac.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/avery/ece554/minilabs/minilab1b/mac.sv|
+!i113 1
+R7
+R8
+n@m@a@c
+vmatmul_tb
+R0
+!s110 1769991644
+!i10b 1
+!s100 lY_=jCZ8o:jOoM2J5B6VD2
+R2
+IN]Vfa:@?TH[?2N2aZB<kg0
+R3
+S1
+R4
+w1769983678
+8C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv
+FC:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv
+!i122 93
+L0 1 30
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv|
+!i113 1
+R7
+R8
+vmatrix_vect_mult
+R0
+R1
+!i10b 1
+!s100 [5lJTAlSZD`N4444BZ7771
+R2
+I8f`UNZ?mRggnc_aG46Tjg0
+R3
+S1
+R4
+w1769991631
+8C:/Users/avery/ece554/minilabs/minilab1b/matrix_vect_mult.sv
+FC:/Users/avery/ece554/minilabs/minilab1b/matrix_vect_mult.sv
+!i122 92
+L0 1 175
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/avery/ece554/minilabs/minilab1b/matrix_vect_mult.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/avery/ece554/minilabs/minilab1b/matrix_vect_mult.sv|
+!i113 1
+R7
+R8

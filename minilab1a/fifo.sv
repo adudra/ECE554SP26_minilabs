@@ -5,7 +5,7 @@ module FIFO
 )
 (
   input  clk,
-  input  rst_n, //sychronous active low reset
+  input  rst_n, //asynchronous active low reset
   input  rden,
   input  wren,
   input  [DATA_WIDTH-1:0] i_data,
