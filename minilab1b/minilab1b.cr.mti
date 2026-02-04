@@ -1,9 +1,39 @@
-C:/Users/avery/ece554/minilabs/minilab1b/fifo.sv {1 {vlog -work work -sv -stats=none C:/Users/avery/ece554/minilabs/minilab1b/fifo.sv
+C:/Users/avery/ece554/minilabs/minilab1b/matmul.sv {2 {vlog -work work -sv -stats=none C:/Users/avery/ece554/minilabs/minilab1b/matmul.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module matmul
+** Warning: C:/Users/avery/ece554/minilabs/minilab1b/matmul.sv(10): (vlog-13314) Defaulting port 'a_matrix' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: C:/Users/avery/ece554/minilabs/minilab1b/matmul.sv(11): (vlog-13314) Defaulting port 'b_vector' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	matmul
+
+} {} {}} C:/Users/avery/ece554/minilabs/minilab1b/avalon_master_slave_top.sv {1 {vlog -work work -sv -stats=none C:/Users/avery/ece554/minilabs/minilab1b/avalon_master_slave_top.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module avalon_master_slave
+
+Top level modules:
+	avalon_master_slave
+
+} {} {}} C:/Users/avery/ece554/minilabs/minilab1b/fifo.sv {1 {vlog -work work -sv -stats=none C:/Users/avery/ece554/minilabs/minilab1b/fifo.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module FIFO
 
 Top level modules:
 	FIFO
+
+} {} {}} C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module matmul_tb
+
+Top level modules:
+	matmul_tb
+
+} {} {}} C:/Users/avery/ece554/minilabs/minilab1b/avalon_mm_master.sv {1 {vlog -work work -sv -stats=none C:/Users/avery/ece554/minilabs/minilab1b/avalon_mm_master.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module avalon_mm_master
+
+Top level modules:
+	avalon_mm_master
 
 } {} {}} C:/Users/avery/ece554/minilabs/minilab1b/mac.sv {1 {vlog -work work -sv -stats=none C:/Users/avery/ece554/minilabs/minilab1b/mac.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -11,5 +41,33 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	MAC
+
+} {} {}} C:/Users/avery/ece554/minilabs/minilab1b/mult_mem_top.sv {1 {vlog -work work -sv -stats=none C:/Users/avery/ece554/minilabs/minilab1b/mult_mem_top.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mult_mem_top
+
+Top level modules:
+	mult_mem_top
+
+} {} {}} C:/Users/avery/ece554/minilabs/minilab1b/avalon_mm_master_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/avery/ece554/minilabs/minilab1b/avalon_mm_master_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module avalon_mm_master_tb
+
+Top level modules:
+	avalon_mm_master_tb
+
+} {} {}} C:/Users/avery/ece554/minilabs/minilab1b/memory.v {1 {vlog -work work -stats=none C:/Users/avery/ece554/minilabs/minilab1b/memory.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mem_wrapper
+
+Top level modules:
+	mem_wrapper
+
+} {} {}} C:/Users/avery/ece554/minilabs/minilab1b/hardcoded_rom.sv {1 {vlog -work work -sv -stats=none C:/Users/avery/ece554/minilabs/minilab1b/hardcoded_rom.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module rom
+
+Top level modules:
+	rom
 
 } {} {}}

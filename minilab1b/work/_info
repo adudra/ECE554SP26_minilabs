@@ -9,35 +9,110 @@ z2
 !i10f 100
 cModel Technology
 dC:/intelFPGA/20.1
-vFIFO
+vavalon_master_slave
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1769991643
+Z1 !s110 1770175636
 !i10b 1
-!s100 bRf0a:GeSG3hUbBSJBU5T1
+!s100 eaAOd5kPmHgHMEKAo]k=Z2
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IY@2N>fka6X`;h2Y4[A9@92
+I;DQi:b_2_JH4_KT]?`zSo2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
 Z4 dC:/Users/avery/ece554/minilabs/minilab1b
-w1769974896
-8C:/Users/avery/ece554/minilabs/minilab1b/fifo.sv
-FC:/Users/avery/ece554/minilabs/minilab1b/fifo.sv
-!i122 90
-L0 1 76
+w1770159705
+8C:/Users/avery/ece554/minilabs/minilab1b/avalon_master_slave_top.sv
+FC:/Users/avery/ece554/minilabs/minilab1b/avalon_master_slave_top.sv
+!i122 464
+L0 1 45
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1769991643.000000
-!s107 C:/Users/avery/ece554/minilabs/minilab1b/fifo.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/avery/ece554/minilabs/minilab1b/fifo.sv|
+Z6 !s108 1770175635.000000
+!s107 C:/Users/avery/ece554/minilabs/minilab1b/avalon_master_slave_top.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/avery/ece554/minilabs/minilab1b/avalon_master_slave_top.sv|
 !i113 1
 Z7 o-work work -sv
 Z8 tCvgOpt 0
+vavalon_mm_master
+R0
+Z9 !s110 1770175635
+!i10b 1
+!s100 lEmZ>GeI<0UJQnW^J2MQ>0
+R2
+I3106e0moVG[ZI5:nZk:A61
+R3
+S1
+R4
+w1770161851
+8C:/Users/avery/ece554/minilabs/minilab1b/avalon_mm_master.sv
+FC:/Users/avery/ece554/minilabs/minilab1b/avalon_mm_master.sv
+!i122 460
+L0 1 117
+R5
+r1
+!s85 0
+31
+Z10 !s108 1770175634.000000
+!s107 C:/Users/avery/ece554/minilabs/minilab1b/avalon_mm_master.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/avery/ece554/minilabs/minilab1b/avalon_mm_master.sv|
+!i113 1
+R7
+R8
+vavalon_mm_master_tb
+R0
+R9
+!i10b 1
+!s100 k5ocf]U>^CzK0M82_QRLl2
+R2
+ImjI=fSj=0==nE8ldia6bA0
+R3
+S1
+R4
+w1770158119
+8C:/Users/avery/ece554/minilabs/minilab1b/avalon_mm_master_tb.sv
+FC:/Users/avery/ece554/minilabs/minilab1b/avalon_mm_master_tb.sv
+!i122 461
+L0 1 47
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/avery/ece554/minilabs/minilab1b/avalon_mm_master_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/avery/ece554/minilabs/minilab1b/avalon_mm_master_tb.sv|
+!i113 1
+R7
+R8
+vFIFO
+R0
+Z11 !s110 1770175634
+!i10b 1
+!s100 bRf0a:GeSG3hUbBSJBU5T1
+R2
+IY@2N>fka6X`;h2Y4[A9@92
+R3
+S1
+R4
+w1769974896
+8C:/Users/avery/ece554/minilabs/minilab1b/fifo.sv
+FC:/Users/avery/ece554/minilabs/minilab1b/fifo.sv
+!i122 457
+L0 1 76
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/avery/ece554/minilabs/minilab1b/fifo.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/avery/ece554/minilabs/minilab1b/fifo.sv|
+!i113 1
+R7
+R8
 n@f@i@f@o
 vMAC
 R0
-R1
+R11
 !i10b 1
 !s100 LbVQW=QkMRATN[jXWmhTG0
 R2
@@ -48,39 +123,64 @@ R4
 w1769735035
 8C:/Users/avery/ece554/minilabs/minilab1b/mac.sv
 FC:/Users/avery/ece554/minilabs/minilab1b/mac.sv
-!i122 91
-L0 1 41
+!i122 458
+Z12 L0 1 41
 R5
 r1
 !s85 0
 31
-R6
+R10
 !s107 C:/Users/avery/ece554/minilabs/minilab1b/mac.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/avery/ece554/minilabs/minilab1b/mac.sv|
 !i113 1
 R7
 R8
 n@m@a@c
-vmatmul_tb
+vmatmul
 R0
-!s110 1769991644
+R9
 !i10b 1
-!s100 lY_=jCZ8o:jOoM2J5B6VD2
+!s100 QVP^gF`>TSo?I8D>ImBWl1
 R2
-IN]Vfa:@?TH[?2N2aZB<kg0
+IhB8WAfkL><8CgHX3<T]d80
 R3
 S1
 R4
-w1769983678
-8C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv
-FC:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv
-!i122 93
-L0 1 30
+w1770175193
+8C:/Users/avery/ece554/minilabs/minilab1b/matmul.sv
+FC:/Users/avery/ece554/minilabs/minilab1b/matmul.sv
+!i122 463
+L0 1 135
 R5
 r1
 !s85 0
 31
 R6
+!s107 C:/Users/avery/ece554/minilabs/minilab1b/matmul.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/avery/ece554/minilabs/minilab1b/matmul.sv|
+!i113 1
+R7
+R8
+vmatmul_tb
+R0
+R11
+!i10b 1
+!s100 _^WXkRR7aXA<LCO8kZb<;1
+R2
+IGhEz0?gge66Z^zGYn_AnQ1
+R3
+S1
+R4
+w1770175497
+8C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv
+FC:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv
+!i122 459
+L0 1 48
+R5
+r1
+!s85 0
+31
+R10
 !s107 C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/avery/ece554/minilabs/minilab1b/matmul_tb.sv|
 !i113 1
@@ -88,7 +188,7 @@ R7
 R8
 vmatrix_vect_mult
 R0
-R1
+!s110 1769991643
 !i10b 1
 !s100 [5lJTAlSZD`N4444BZ7771
 R2
@@ -105,9 +205,107 @@ R5
 r1
 !s85 0
 31
-R6
+!s108 1769991643.000000
 !s107 C:/Users/avery/ece554/minilabs/minilab1b/matrix_vect_mult.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/avery/ece554/minilabs/minilab1b/matrix_vect_mult.sv|
+!i113 1
+R7
+R8
+vmem_wrapper
+R9
+!i10b 1
+!s100 M3jiLfB;XFR[V<[F]GN6V1
+R2
+ILh6EbCF_H^0;Id:QQlDnB1
+R3
+R4
+w1769973353
+8C:/Users/avery/ece554/minilabs/minilab1b/memory.v
+FC:/Users/avery/ece554/minilabs/minilab1b/memory.v
+!i122 462
+L0 2 66
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/avery/ece554/minilabs/minilab1b/memory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/avery/ece554/minilabs/minilab1b/memory.v|
+!i113 1
+o-work work
+R8
+vmult_mem_top
+R0
+R1
+!i10b 1
+!s100 nz=9b?CGKQ>_NTTJUPliS3
+R2
+IF8h>h7g]lGX^jYh3YGO4I0
+R3
+S1
+R4
+w1770163307
+8C:/Users/avery/ece554/minilabs/minilab1b/mult_mem_top.sv
+FC:/Users/avery/ece554/minilabs/minilab1b/mult_mem_top.sv
+!i122 466
+L0 1 35
+R5
+r1
+!s85 0
+31
+Z13 !s108 1770175636.000000
+!s107 C:/Users/avery/ece554/minilabs/minilab1b/mult_mem_top.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/avery/ece554/minilabs/minilab1b/mult_mem_top.sv|
+!i113 1
+R7
+R8
+vmult_mem_top_tb
+R0
+R1
+!i10b 1
+!s100 D4jWhK0LcG=6QA2XO>AiO0
+R2
+I9ZKgEo]^PL356IT3ER>ez0
+R3
+S1
+R4
+w1770175621
+8C:/Users/avery/ece554/minilabs/minilab1b/mult_mem_top_tb.sv
+FC:/Users/avery/ece554/minilabs/minilab1b/mult_mem_top_tb.sv
+!i122 467
+R12
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/avery/ece554/minilabs/minilab1b/mult_mem_top_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/avery/ece554/minilabs/minilab1b/mult_mem_top_tb.sv|
+!i113 1
+R7
+R8
+vrom
+R0
+R1
+!i10b 1
+!s100 Ra_1ERGU:9X69:2Ue7GhY0
+R2
+IDmJeh9PlBQR]7je=>G`5c2
+R3
+S1
+R4
+w1770159437
+8C:/Users/avery/ece554/minilabs/minilab1b/hardcoded_rom.sv
+FC:/Users/avery/ece554/minilabs/minilab1b/hardcoded_rom.sv
+!i122 465
+L0 1 22
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/avery/ece554/minilabs/minilab1b/hardcoded_rom.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/avery/ece554/minilabs/minilab1b/hardcoded_rom.sv|
 !i113 1
 R7
 R8

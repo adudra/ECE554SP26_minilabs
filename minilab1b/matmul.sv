@@ -6,6 +6,7 @@ module matmul
 (
     input rst_n,
     input clk,
+    input mult_valid,
     input reg [DATA_WIDTH-1:0] a_matrix [0:DEPTH-1] [0:DEPTH-1],
     input reg [DATA_WIDTH-1:0] b_vector [0:DEPTH-1],
     output wire [23:0] c_vector [0:DEPTH-1],
@@ -34,7 +35,8 @@ FIFO ia_vectors [DEPTH-1:0] (
 integer x;
 reg [3:0] count;
 always_comb begin 
-    for (x = 0; x < DEPTH-1; x = x + 1)
+    //TODO I think this should be DEPTH 
+    for (x = 0; x < DEPTH; x = x + 1)
         ia_idata[x] = a_matrix[x][count];
 end
 
@@ -67,7 +69,7 @@ FIFO ib_vector(
 // MAC INSTANTIATION //
 genvar i;
 generate
-    for (i = 0; i < DATA_WIDTH-1; ++i) begin 
+    for (i = 0; i < DATA_WIDTH; i = i + 1) begin 
         MAC imac(
             .clk(clk),
             .rst_n(rst_n),
@@ -102,13 +104,13 @@ always_comb begin
     case (state)
     CLEAR: begin
         clear = 1'b1;
-        next_state = INIT;
+        if (mult_valid)
+            next_state = INIT;
     end
     INIT: begin
         ia_wren = 8'hff;
         ib_wren = 1'b1;
         if ((ia_full == 8'hff) & ib_full)
-            //next_state = INITB;
             next_state = BUSY;
     end
     BUSY: begin
