@@ -1,0 +1,4 @@
+ALMs needed in our design 124 
+ALMs needed in IP design 99
+
+The vendor IPs are custom designed by teams of skilled architects so ALMs required is significantly less. Additionally, the team may have taken an interative approach to try to reduce resources further. Synthesis affects how the design maps to the FPGA, and IP RTL is not available for comparison.

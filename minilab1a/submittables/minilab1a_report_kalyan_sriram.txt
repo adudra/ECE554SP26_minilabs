@@ -1,0 +1,3 @@
+124 ALMs (our design) vs 99 ALMs (IP design) 
+
+Our design required more ALMs due to the way our design was synthesized from Verilog. Certain programming practices will yield different results, and since the IP version is proprietary we don't know what the optimizations made were.
