@@ -1,0 +1,9 @@
+1. The design was validated through simulation, with a screenshot of one testbench provided in the screenshot directory under the name avalon_mm_waves.png. Three distinct testbenches were created to test memory access, matrix multiplication, and the integrated operation of memory access with matrix multiplication. Each testbench produced output data that was verified through visual inspection.
+
+2. Timing issues were addressed by introducing pipelining into the MAC unit. The Quartus Timing Analyzer was used to identify the critical path, which extended from the FIFO output to the register containing the MAC result. Adding a pipeline stage between the multiplier and adder removed the negative slack and improved the maximum clock frequency to 223 MHz.
+
+3. The design was tested on hardware by routing the matrix multiplication results to the seven-segment displays. Switch SW0 controlled whether the displays were enabled, while switches SW[3:1] selected a binary index into the output vector. The displayed results were validated by manually computing the expected matrix multiplication values from the ROM initialization file and comparing them to the observed outputs.
+
+4. SignalTap was used to verify the Avalon memory-mapped interface by observing signals such as read, address, and readdata. A trigger was configured on the rising edge of the read signal, marking the start of a read transaction. The resulting waveforms were then compared against the interface specification to confirm correct operation.
+
+5. The most significant difficulty in this lab was simulation. The presence of multiple testbenches made validation more complex and time-intensive. This was overcome by methodically verifying each module across all testbenches to ensure correct behavior prior to full system integration.

@@ -1,0 +1,14 @@
+1) Design verification through simulation
+We verified the design using Modelsim simulation and included a screenshot of one testbench in the screenshot directory (avalon_mm_waves.png). Three separate testbenches were developed to validate memory retrieval, matrix multiplication, and the combined operation of memory retrieval with matrix multiplication. Each testbench printed the relevant outputs, which were verified through visual inspection.
+
+2) Meeting timing constraints
+To satisfy timing constraints, we pipelined the MAC unit. Using the Quartus Timing Analyzer, we identified the critical path as running from the FIFO output to the register holding the MAC output. By inserting a pipeline stage between the multiplication and addition operations, we eliminated the negative slack and increased the maximum operating frequency to 223 MHz.
+
+3) On-board testing with example and screenshot
+On-board testing was performed by mapping the matrix multiplication output to the seven-segment displays. Switch SW0 was used to enable the display, while switches SW[3:1] selected a binary index into the output vector. After reviewing the ROM initialization file and manually computing the expected matrix multiplication results, we compared them against the displayed outputs to confirm correctness.
+
+4) SignalTap verification
+We tested the Avalon memory-mapped interface using SignalTap by monitoring key signals such as read, address, and readdata. A trigger was set on the rising edge of the read signal, which indicates the start of a read transaction. The captured waveforms were then cross-checked against the interface specification to verify correct behavior.
+
+5) Challenges and solutions
+The primary challenge encountered during this lab was simulation. Managing and validating multiple testbenches was both time-consuming and complex. This was addressed by systematically testing each module across all testbenches to ensure consistent and correct functionality before integration.
