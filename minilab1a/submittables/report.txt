@@ -7,6 +7,6 @@ IP:
 Estimate of Logic utilization (ALMs needed) ; 99
 
 The Vendor IPs are often highly optimized for the FPGA 
-architecture. Our design could been slightly less efficient,
+architecture. Our design could been  less efficient,
 or have been synthesized using more generic blocks, making
 it less optimal. 
