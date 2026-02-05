@@ -10,7 +10,8 @@ module matmul
     input reg [DATA_WIDTH-1:0] a_matrix [0:DEPTH-1] [0:DEPTH-1],
     input reg [DATA_WIDTH-1:0] b_vector [0:DEPTH-1],
     output wire [23:0] c_vector [0:DEPTH-1],
-    output logic [23:0] sum 
+    output logic [23:0] sum,
+    output reg done
 );
 
 logic run; //signal asserted during matmul computation
@@ -35,7 +36,6 @@ FIFO ia_vectors [DEPTH-1:0] (
 integer x;
 reg [3:0] count;
 always_comb begin 
-    //TODO I think this should be DEPTH 
     for (x = 0; x < DEPTH; x = x + 1)
         ia_idata[x] = a_matrix[x][count];
 end
@@ -69,7 +69,7 @@ FIFO ib_vector(
 // MAC INSTANTIATION //
 genvar i;
 generate
-    for (i = 0; i < DATA_WIDTH; i = i + 1) begin 
+    for (i = 0; i < DATA_WIDTH; i = i + 1) begin : MAC_STAMP
         MAC imac(
             .clk(clk),
             .rst_n(rst_n),
@@ -99,6 +99,7 @@ always_comb begin
     run = 1'b0;
     ia_wren = 8'h00;
     ib_wren = 1'b0;
+    done = 1'b0;
     next_state = state;
 
     case (state)
@@ -118,13 +119,14 @@ always_comb begin
         if (ia_empty[7])
             next_state = IDLE;
     end
-    IDLE: begin end
+    IDLE: begin 
+        done = 1'b1;
+    end
     default: begin end
     endcase
 end
 
 // SUM REDUCTION OUTPUT //
-//TODO: see if this should be outputed or not
 integer k;
 always_comb begin
     sum = 0;

@@ -7,14 +7,15 @@ module mult_mem_top
     input clk,
     input rst_n,
     output wire [23:0] c_vector [0:DEPTH-1],
-    output [23:0] sum
+    output [23:0] sum,
+    output done
 );
 
-reg [DATA_WIDTH-1:0] a_matrix [0:DEPTH-1] [0:DEPTH-1];
-reg [DATA_WIDTH-1:0] b_vector [0:DEPTH-1];
-reg mult_valid;
+wire [DATA_WIDTH-1:0] a_matrix [0:DEPTH-1] [0:DEPTH-1];
+wire [DATA_WIDTH-1:0] b_vector [0:DEPTH-1];
+wire mult_valid;
 
-avalon_master_slave iMEM(
+avalon_master_slave iMM(
     .clk(clk),
     .rst_n(rst_n),
     .a_matrix(a_matrix),
@@ -29,7 +30,8 @@ matmul iMATMUL(
     .a_matrix(a_matrix),
     .b_vector(b_vector),
     .c_vector(c_vector),
-    .sum(sum)
+    .sum(sum),
+    .done(done)
 );
 
 endmodule

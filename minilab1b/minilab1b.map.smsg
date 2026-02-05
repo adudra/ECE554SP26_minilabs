@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at minilab1b.sv(36): object "DONE" differs only in case from object "done" in the same scope File: C:/Users/avery/ece554/minilabs/minilab1b/minilab1b.sv Line: 36
+Info (10281): Verilog HDL Declaration information at matmul.sv(18): object "clear" differs only in case from object "CLEAR" in the same scope File: C:/Users/avery/ece554/minilabs/minilab1b/matmul.sv Line: 18

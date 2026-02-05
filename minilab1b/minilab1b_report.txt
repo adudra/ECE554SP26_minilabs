@@ -1,0 +1,30 @@
+1) How you tested the design via simulation
+We have a screenshot of one of our testbenches in the 'screenshot' directory
+called 'avalon_mm_waves.png'. We tested the design using a set of 3 
+different testbenches that printed out the results of the memory retrieval,
+the matrix multiplication, and the combination of the memory retrieval and 
+matrix multiplication. Results were checked visually.
+
+2) How you fixed the design to meet timing constraints
+We fixed the design to meet timing contraints by pipelining our MAC.
+We identified this critical path, by using the 'Timing Analyzer' tool 
+built into Quartus. This showed the longest path ran from the output of 
+our fifo to the flop containing the output of our mac. By adding a pipeline 
+between the adder and multiplication, we were able to remove the negative 
+slack and increase the Fmax to 223Mhz.
+
+3) How you tested the design on board using an example and screenshot of the 
+board that shows it
+
+TODO
+
+4) How you tested the design using SignalTap (screenshot of the waveform around
+the trigger condition)
+
+TODO 
+
+5) Explain any difficulties that you faced during the process and how you 
+overcame it
+The biggest difficulty faced during this lab had to do with simulating 
+our modules. We had several different testbenches, so the most difficult and
+time consuming part was validating our modules using these testbenches.
