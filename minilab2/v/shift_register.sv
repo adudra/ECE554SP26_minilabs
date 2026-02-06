@@ -1,5 +1,3 @@
-`default_nettype none
-
 module shift_register #(
     parameter int WIDTH = 1,
     parameter int DEPTH = 1
@@ -36,5 +34,3 @@ module shift_register #(
 
     assign o_rdata = mem[DEPTH - 1];
 endmodule
-
-`default_nettype wire

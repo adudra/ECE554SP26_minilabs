@@ -1,5 +1,3 @@
-`default_nettype none
-
 module convolution #(
     parameter int ROW_LENGTH = 1280
 ) (
@@ -76,5 +74,3 @@ module convolution #(
 
     assign o_data = conv;
 endmodule
-
-`default_nettype wire

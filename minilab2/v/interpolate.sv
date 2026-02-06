@@ -1,5 +1,3 @@
-`default_nettype none
-
 module interpolate #(
     parameter int ROW_LENGTH = 1280
 ) (
@@ -43,5 +41,3 @@ module interpolate #(
     assign o_data = sum[13:2];
 
 endmodule
-
-`default_nettype wire
