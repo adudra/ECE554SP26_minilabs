@@ -11,6 +11,8 @@ module convolution #(
     logic        shift_en;
     always_comb shift_en = i_valid;
 
+    // Instantiate two shift registers to delay the input data by one and two
+    // rows, forming the first column of 3 input values.
     shift_register #(.WIDTH(12), .DEPTH(ROW_LENGTH)) sr1 (
         .i_clk(i_clk),
         .i_rst_n(i_rst_n),
@@ -27,6 +29,7 @@ module convolution #(
         .o_rdata(row2_delay)
     );
 
+    // Hardcoded 3x3 convolution kernel.
     logic signed [11:0] data [0:2][0:2];
     wire  signed [11:0] filter [0:2][0:2] = '{
         // vertical edge sobel
@@ -46,6 +49,7 @@ module convolution #(
         data[2][2] = i_data;
     end
 
+    // Register the first column twice to form the 3x3 sliding window.
     always_ff @(posedge i_clk) begin
         data[0][0] <= data[0][1];
         data[0][1] <= data[0][2];
@@ -55,8 +59,8 @@ module convolution #(
         data[2][1] <= data[2][2];
     end
 
-    // genvar i, j;
-    // generate
+    // Perform the convolution operation, and then take the absolute value of
+    // the result.
     int i, j;
     logic signed [13:0] conv;
     always_comb begin
@@ -70,7 +74,6 @@ module convolution #(
 
         conv = ($signed(conv) < 0) ? -conv : conv;
     end
-    // endgenerate
 
     assign o_data = conv;
 endmodule
