@@ -1,3 +1,5 @@
+// written by colin
+
 module interpolate_tb();
     
     reg clk;
