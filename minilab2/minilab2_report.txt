@@ -1,0 +1,44 @@
+Kalyan S. Avery D. Colin M.
+
+Implementation details:
+
+convolution.sv:
+    this module has two shift registers that delay the input stream by one
+    and two full rows (parameterized by ROW_LENGTH). These delays create the
+    first column of a 3x3 sliding window: row2_delay, row1_delay, and i_data.
+    The remaining two columns are formed by registering the window columns
+    each clock to shift the window horizontally. A hardcoded 3x3 Sobel kernel
+    (horizontal edge) is stored in filter. The convolution is computed as the
+    sum of signed products over the 3x3 window, then the absolute value of the
+    result is taken. The output o_data is assigned to the resulting magnitude.
+
+convolution_tb.sv:
+    this testbench instantiates convolution with a small 4x4 image and feeds
+    a simple ramp pattern into the DUT while i_valid is asserted. It builds a
+    golden reference by applying the same 3x3 Sobel kernel in software, using
+    zero padding for the top two rows and left two columns. The testbench
+    accounts for the DUT latency by comparing the output to the previous
+    expected value and reports mismatches with $error. A clock generator and
+    reset sequence are included, and the simulation stops after all samples
+    are checked.
+
+interpolation.sv:
+    this module delays the input by one full row using a shift register
+    (ROW_LENGTH cycles) to create a 2x2 sliding window. The current input
+    (data00) and the delayed row sample (data10) form the first column, while
+    the second column (data01, data11) is created by registering that column
+    one additional cycle (reset to zero on reset). The output is the arithmetic
+    mean of the 2x2 window: sum of four samples divided by four using a right
+    shift (sum[13:2]).
+
+interpolation_tb.sv:
+    this testbench drives a 4x4 ramp image into the interpolate DUT while
+    asserting i_valid each cycle. It computes a golden reference by averaging
+    each 2x2 neighborhood (zero padding for the first row and column) and
+    dividing by four via a right shift. Because the DUT adds one-cycle
+    latency, the testbench compares the current output against the previous
+    expected value and flags mismatches with $error. It includes a clock
+    generator, reset sequence, and stops after all samples are checked.
+
+problems: 
+    We forgot to take the absolute value and were grading noise, fixed by debugging
