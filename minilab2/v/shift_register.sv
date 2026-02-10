@@ -32,5 +32,6 @@ module shift_register #(
     end
     endgenerate
 
+    // Read out the last element, effectively delayed DEPTH cycles.
     assign o_rdata = mem[DEPTH - 1];
 endmodule
