@@ -33,7 +33,7 @@ module spart(
 );
 
 wire tx_en, tx_busy;
-wire rx_en, rx_ready;
+wire rx_baud, rx_ready;
 wire [7:0] tx_data, rx_data;
 wire [15:0] baud_divisor;
 
@@ -52,9 +52,10 @@ assign databus = (iorw  && (ioaddr == 2'b00)) ? rx_data :
 baud_rate_generator brg(
     .clk        (clk),
     .rst        (rst),
+    .db_high    (baud_divisor[15:8]),
+    .db_low     (baud_divisor[7:0]),
     .tx_en      (tx_en),
-    .rx_en      (rx_en),
-    .baud_divisor (baud_divisor)
+    .rx_baud    (rx_baud)
 );
 
 transmitter tx(
@@ -69,7 +70,7 @@ transmitter tx(
 receiver rx(
     .clk        (clk),
     .rst        (rst),
-    .rx_en      (rx_en),
+    .rx_en      (rx_baud),
     .rx_data    (rx_data),
     .rxd        (rxd),
     .rx_ready   (rx_ready)
