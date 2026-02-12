@@ -34,6 +34,7 @@ module spart(
 
 wire tx_en, tx_busy;
 wire rx_baud, rx_ready;
+wire rx_reset_valid;
 wire [7:0] tx_data, rx_data;
 wire [15:0] baud_divisor;
 
@@ -41,6 +42,8 @@ wire [7:0] status_register = {6'b0, tbr, rda};
 
 assign tbr = ~tx_busy;
 assign rda = rx_ready;
+
+assign rx_reset_valid = iocs && iorw && (ioaddr == 2'b00);
 
 assign databus = (iorw  && (ioaddr == 2'b00)) ? rx_data : 
                  (iorw && (ioaddr == 2'b00)) ? tx_data :
@@ -68,12 +71,13 @@ transmitter tx(
 );
 
 receiver rx(
-    .clk        (clk),
-    .rst        (rst),
-    .rx_en      (rx_baud),
-    .rx_data    (rx_data),
-    .rxd        (rxd),
-    .rx_ready   (rx_ready)
+    .clk            (clk),
+    .rst            (rst),
+    .i_rx_baud      (rx_baud),
+    .i_rxd          (rxd),
+    .i_reset_valid  (rx_reset_valid),
+    .o_data         (rx_data),
+    .o_valid        (rx_ready)
 );
 
 endmodule
