@@ -43,8 +43,8 @@ always @(posedge clk) begin
         //reset to freq 50Mhz and 9600 baud (50Mhz / (2^4 * 9600)) - 1
         en_cnt <= 5'h10;
     else if (load_en_cnt)
-        en_cnt <= 5'h10; // TODO: see if this should be F or 10 in hex 
-    else if (rx_baud)
+        en_cnt <= 5'h10;        // TODO: see if this should be F or 10 in hex 
+    else if (load_div)       
         en_cnt <= en_cnt - 1;
 end
 
