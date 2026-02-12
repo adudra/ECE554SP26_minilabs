@@ -4,8 +4,8 @@ module receiver (
     input  wire       i_rx_baud,
     input  wire       i_rxd,
     input  wire       i_reset_valid,
-    output wire [7:0] o_data,
-    output wire       o_valid
+    output reg [7:0] o_data,
+    output reg       o_valid
 );
     typedef enum logic {
         IDLE,
@@ -24,15 +24,15 @@ module receiver (
     wire start = (state == IDLE) && (next_state == RECV);
 
     // RX data available flag.
-    logic valid;
+    //logic valid;
     logic set_valid;
     always_ff @(posedge clk) begin
         if (rst)
-            valid <= 1'b0;
+            o_valid <= 1'b0;
         else if (i_reset_valid)
-            valid <= 1'b0;
+            o_valid <= 1'b0;
         else if (set_valid)
-            valid <= 1'b1;
+            o_valid <= 1'b1;
     end
 
     // Shift enable latch, based on data available.
@@ -41,7 +41,7 @@ module receiver (
         if (rst)
             shift_en <= 1'b0;
         else if (start)
-            shift_en <= !valid;
+            shift_en <= !o_valid;
     end
 
     // Triple flop the rxd signal to avoid metastability.
@@ -53,17 +53,17 @@ module receiver (
 
     // Shift in the received bit (UART is little endian)
     // each time we want to sample.
-    logic [7:0] data;
+    //logic [7:0] data;
     logic       rx_en;
     always_ff @(posedge clk) begin
         if (rx_en && shift_en)
-            data <= {i_rxd, data[7:1]};
+            o_data <= {i_rxd, o_data[7:1]};
     end
 
     // Sample counter resets to align with the start bit,
     // then counts up to 16 to sample the data line.
     logic [3:0] sample_counter;
-    always_comb rx_en = (state == RECV) && (sample_counter == 4'd7);
+    always_comb rx_en = (state == RECV) && (sample_counter == 4'd7) && i_rx_baud;
     always_ff @(posedge clk) begin
         if (start)
             sample_counter <= 4'd0;
@@ -93,7 +93,7 @@ module receiver (
                     next_state = RECV;
             end
             RECV: begin
-                if (bit_counter == 4'd8) begin
+                if (bit_counter == 4'd9) begin
                     next_state = IDLE;
                     set_valid = 1'b1;
                 end
