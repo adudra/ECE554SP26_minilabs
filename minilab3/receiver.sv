@@ -55,10 +55,13 @@ module receiver (
     // each time we want to sample.
     //logic [7:0] data;
     logic       rx_en;
+    reg [8:0] rx_data_buffer;
     always_ff @(posedge clk) begin
         if (rx_en && shift_en)
-            o_data <= {i_rxd, o_data[7:1]};
+            rx_data_buffer <= {i_rxd, rx_data_buffer[8:1]};
     end
+
+    assign o_data = rx_data_buffer[7:0];
 
     // Sample counter resets to align with the start bit,
     // then counts up to 16 to sample the data line.
@@ -93,7 +96,7 @@ module receiver (
                     next_state = RECV;
             end
             RECV: begin
-                if (bit_counter == 4'd9) begin
+                if (bit_counter == 4'd10) begin 
                     next_state = IDLE;
                     set_valid = 1'b1;
                 end

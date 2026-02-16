@@ -115,6 +115,10 @@ baud_rate_generator iBAUD_GEN(
     send_byte(8'h56);
     expect_byte(8'h56);
 
+    repeat (6) @(posedge clk);
+    send_byte(8'h06);
+    expect_byte(8'h06);
+
     // done
     $stop();
   end

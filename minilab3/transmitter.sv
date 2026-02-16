@@ -7,8 +7,14 @@ module transmitter (
     output wire       o_txd,
     output wire       o_busy
 );
-    typedef enum logic {
+    // typedef enum logic {
+    //     IDLE,
+    //     SEND
+    // } state_t;
+
+    typedef enum logic [1:0] {
         IDLE,
+        WAIT,
         SEND
     } state_t;
 
@@ -48,6 +54,14 @@ module transmitter (
         case (state)
             IDLE: begin
                 if (i_start) begin
+                    next_state = WAIT;
+                    // next_state = SEND;
+                    // latch_data = 1'b1;
+                    // txd = 1'b0;
+                end
+            end
+            WAIT: begin 
+                if (i_tx_en) begin 
                     next_state = SEND;
                     latch_data = 1'b1;
                     txd = 1'b0;
@@ -56,7 +70,7 @@ module transmitter (
             SEND: begin
                 txd = data[0];
 
-                if (bit_counter == 4'd9)
+                if (bit_counter == 4'd10)
                     next_state = IDLE;
             end
             default: next_state = IDLE;

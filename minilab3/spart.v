@@ -27,7 +27,7 @@ module spart(
     output rda, // receive data available
     output tbr, // transmit buffer ready
     input [1:0] ioaddr,
-    inout [7:0] databus,
+    inout reg [7:0] databus,
     output txd,
     input rxd
 );
@@ -39,10 +39,13 @@ module spart(
 wire tx_en, tx_busy;
 wire rx_baud, rx_ready;
 wire rx_reset_valid;
-wire [7:0] tx_data, rx_data;
+reg [7:0] tx_data;
+wire [7:0] rx_data;
 reg [15:0] baud_divisor;
+reg [7:0] rx_data_buffer;
 wire start;
 reg iorw_flopped;
+reg [1:0] ioaddr_flopped;
 
 
 
@@ -52,10 +55,10 @@ reg iorw_flopped;
 
 assign tbr = ~tx_busy;
 assign rda = rx_ready;
-assign start = ~tx_busy & ~iorw;
-
-assign rx_reset_valid = iocs && iorw && (ioaddr == 2'b00);
-
+assign start = ~tx_busy & ~iorw_flopped & (ioaddr_flopped == 2'b00);
+assign rx_reset_valid = iocs & iorw_flopped & (ioaddr == 2'b00) & rx_ready;
+//assign databus = rx_ready ? rx_data_buffer : 8'hZZ; 
+assign databus = rx_ready ? rx_data : 8'hZZ; 
 
 
 // -----------------------------------------
@@ -66,7 +69,7 @@ assign rx_reset_valid = iocs && iorw && (ioaddr == 2'b00);
 always @(posedge clk) begin 
     if (rst)
         baud_divisor <= 8'h01;
-    else (ioaddr == 2'b11)
+    else if (ioaddr == 2'b11)
         baud_divisor[15:8] <= databus;
 end
 
@@ -78,28 +81,32 @@ always @(posedge clk) begin
         baud_divisor[7:0] <= databus;
 end
 
-// Transmit Buffer (from SPART to Driver)
-always @(posedge clk) begin 
-    if (rst)
-        databus <= 8'h00;
-    else if (iorw_flopped  && (ioaddr == 2'b00))
-        databus <= o_data;
-end
-
 // Receive Buffer (from Driver to SPART)
 always @(posedge clk) begin 
     if (rst)
         tx_data <= 8'h00;
-    else if (!iorw_flopped && (ioaddr == 2'b00))
+    else if (!iorw && (ioaddr == 2'b00))
         tx_data <= databus;
+end
+
+// Transmit Buffer (from SPART to Driver)
+
+always @(posedge clk) begin 
+    if (rst)
+        rx_data_buffer <= 8'h00;
+    else if (rx_ready)
+        rx_data_buffer <= rx_data;
 end
 
 // Status Register
 always @(posedge clk) begin 
-    if (rst)
-        iorw_flopped <= 1'b0;
-    else 
+    if (rst) begin 
+        iorw_flopped <= 1'b1; //reset to read 
+        ioaddr_flopped <= 2'b00;
+    end else begin 
         iorw_flopped <= iorw;
+        ioaddr_flopped <= ioaddr;
+    end
 end
 
 
@@ -120,7 +127,7 @@ transmitter tx(
     .clk            (clk),
     .rst            (rst),
     .i_tx_en        (tx_en),
-    .i_start        (),
+    .i_start        (start),
     .i_data         (tx_data),
     .o_txd          (txd),
     .o_busy         (tx_busy)
