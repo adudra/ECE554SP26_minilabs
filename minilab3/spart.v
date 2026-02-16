@@ -56,8 +56,7 @@ reg [1:0] ioaddr_flopped;
 assign tbr = ~tx_busy;
 assign rda = rx_ready;
 assign start = ~tx_busy & ~iorw_flopped & (ioaddr_flopped == 2'b00);
-assign rx_reset_valid = iocs & iorw_flopped & (ioaddr == 2'b00) & rx_ready;
-//assign databus = rx_ready ? rx_data_buffer : 8'hZZ; 
+assign rx_reset_valid = iocs & iorw_flopped & (ioaddr == 2'b00) & rx_ready; 
 assign databus = rx_ready ? rx_data : 8'hZZ; 
 
 
@@ -87,15 +86,6 @@ always @(posedge clk) begin
         tx_data <= 8'h00;
     else if (!iorw && (ioaddr == 2'b00))
         tx_data <= databus;
-end
-
-// Transmit Buffer (from SPART to Driver)
-
-always @(posedge clk) begin 
-    if (rst)
-        rx_data_buffer <= 8'h00;
-    else if (rx_ready)
-        rx_data_buffer <= rx_data;
 end
 
 // Status Register
