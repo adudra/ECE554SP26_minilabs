@@ -68,7 +68,7 @@ assign databus = rx_ready ? rx_data : 8'hZZ;
 // Baud Divisor Upper
 always @(posedge clk) begin 
     if (rst)
-        baud_divisor <= 8'h01;
+        baud_divisor[15:8] <= 8'h01;
     else if (ioaddr == 2'b11)
         baud_divisor[15:8] <= databus;
 end

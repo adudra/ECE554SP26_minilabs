@@ -38,9 +38,11 @@ module driver (
     localparam logic [7:0] DIV_LO = 8'h05;
 
     always_comb begin
+        next_state = state;
         iocs = 1'b0;
         iorw = 1'bx;
         ioaddr = 2'hx;
+        odata = 8'h00;
         store_fifo = 1'b0;
         load_fifo = 1'b0;
 

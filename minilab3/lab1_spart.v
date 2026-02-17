@@ -37,7 +37,12 @@ module lab1_spart(
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
-
+wire iorw;
+wire iocs;
+wire rda;
+wire tbr;
+wire [1:0] ioaddr;
+wire [7:0] databus;
 
 
 
@@ -45,28 +50,54 @@ module lab1_spart(
 //  Structural coding
 //=======================================================
 
+// spart u0 (
+// 	.clk			(CLOCK_50),
+// 	.rst			(~KEY[0]),
+// 	.iocs			(SW[0]),
+// 	.iorw			(SW[1]),
+// 	.rda			(LEDR[0]),
+// 	.tbr			(LEDR[1]),
+// 	.ioaddr			(SW[3:2]),
+// 	.databus		(GPIO[7:0]),
+// 	.txd			(GPIO[8]),
+// 	.rxd			(GPIO[9])
+// );
+
+// driver u1 (
+// 	.clk			(CLOCK_50),
+// 	.rst			(~KEY[0]),
+// 	.HEX0			(HEX0),
+// 	.HEX1			(HEX1),
+// 	.HEX2			(HEX2),
+// 	.HEX3			(HEX3),
+// 	.HEX4			(HEX4),
+// 	.HEX5			(HEX5)
+// );
+
+
 spart u0 (
 	.clk			(CLOCK_50),
 	.rst			(~KEY[0]),
-	.iocs			(SW[0]),
-	.iorw			(SW[1]),
-	.rda			(LEDR[0]),
-	.tbr			(LEDR[1]),
-	.ioaddr			(SW[3:2]),
-	.databus		(GPIO[7:0]),
-	.txd			(GPIO[8]),
-	.rxd			(GPIO[9])
+	.iocs			(iocs),
+	.iorw			(iorw),
+	.rda			(rda),
+	.tbr			(tbr),
+	.ioaddr			(ioaddr),
+	.databus		(databus),
+	.txd			(GPIO[0]),
+	.rxd			(GPIO[1])
 );
 
 driver u1 (
-	.clk			(CLOCK_50),
-	.rst			(~KEY[0]),
-	.HEX0			(HEX0),
-	.HEX1			(HEX1),
-	.HEX2			(HEX2),
-	.HEX3			(HEX3),
-	.HEX4			(HEX4),
-	.HEX5			(HEX5)
+    .clk(CLOCK_50),
+    .rst(~KEY[0]),
+    .br_cfg({SW[9],SW[8]}),
+    .iocs(iocs),
+    .iorw(iorw),
+    .rda(rda),
+    .tbr(tbr),
+    .ioaddr(ioaddr),
+    .databus(databus)
 );
 
 

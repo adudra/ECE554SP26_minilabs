@@ -1,0 +1,13 @@
+
+State Machine - |lab1_spart|driver:u1|state
+Name state.SEND state.RECV state.LOAD_HI state.LOAD_LO 
+state.LOAD_LO 0 0 0 0 
+state.LOAD_HI 0 0 1 1 
+state.RECV 0 1 0 1 
+state.SEND 1 0 0 1 
+
+State Machine - |lab1_spart|spart:u0|transmitter:tx|state
+Name state.IDLE state.SEND state.WAIT 
+state.IDLE 0 0 0 
+state.WAIT 1 0 1 
+state.SEND 1 1 0 
