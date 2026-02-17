@@ -46,6 +46,7 @@ reg [7:0] rx_data_buffer;
 wire start;
 reg iorw_flopped;
 reg [1:0] ioaddr_flopped;
+reg iocs_flopped;
 
 
 
@@ -55,8 +56,8 @@ reg [1:0] ioaddr_flopped;
 
 assign tbr = ~tx_busy;
 assign rda = rx_ready;
-assign start = ~tx_busy & ~iorw_flopped & (ioaddr_flopped == 2'b00);
-assign rx_reset_valid = iocs & iorw_flopped & (ioaddr == 2'b00) & rx_ready; 
+assign start = ~tx_busy & iocs_flopped & ~iorw_flopped & (ioaddr_flopped == 2'b00);
+assign rx_reset_valid = iocs & iorw & (ioaddr == 2'b00) & rx_ready; 
 assign databus = rx_ready ? rx_data : 8'hZZ; 
 
 
@@ -93,9 +94,11 @@ always @(posedge clk) begin
     if (rst) begin 
         iorw_flopped <= 1'b1; //reset to read 
         ioaddr_flopped <= 2'b00;
+        iocs_flopped <= 1'b0;
     end else begin 
         iorw_flopped <= iorw;
         ioaddr_flopped <= ioaddr;
+        iocs_flopped <= iocs;
     end
 end
 

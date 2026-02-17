@@ -50,6 +50,7 @@ module driver (
                 iorw = 1'b0;
                 ioaddr = ADDR_DIV_LO;
                 odata = DIV_LO;
+                load_fifo = 1'b1;
 
                 next_state = LOAD_HI;
             end
@@ -58,6 +59,7 @@ module driver (
                 iorw = 1'b0;
                 ioaddr = ADDR_DIV_HI;
                 odata = DIV_HI;
+                load_fifo = 1'b1;
 
                 next_state = RECV;
             end
@@ -75,6 +77,7 @@ module driver (
                     iocs = 1'b1;
                     iorw = 1'b0;
                     ioaddr = ADDR_DATA;
+                    odata = fifo;
                     load_fifo = 1'b1;
                     next_state = RECV;
                 end

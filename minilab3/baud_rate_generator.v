@@ -19,8 +19,8 @@ always @(posedge clk) begin
 end
 
 // Control signals //
-reg load_div;
-reg load_en_cnt;
+wire load_div;
+wire load_en_cnt;
 reg [4:0] en_cnt;
 reg [15:0] cnt_div;
 

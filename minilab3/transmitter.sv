@@ -77,6 +77,6 @@ module transmitter (
         endcase
     end
 
-    assign o_busy = state == SEND;
+    assign o_busy = (state == WAIT) || (state == SEND);
     assign o_txd = txd;
 endmodule
