@@ -34,8 +34,8 @@ module driver (
     localparam logic [1:0] ADDR_DIV_LO = 2'b10;
     localparam logic [1:0] ADDR_DIV_HI = 2'b11;
 
-    localparam logic [7:0] DIV_HI = 8'h00;
-    localparam logic [7:0] DIV_LO = 8'h05;
+    localparam logic [7:0] DIV_HI [0:3] = '{8'h02, 8'h01, 8'h00, 8'h00};
+    localparam logic [7:0] DIV_LO [0:3] = '{8'h8b, 8'h44, 8'ha2, 8'h51};
 
     always_comb begin
         next_state = state;
@@ -51,7 +51,7 @@ module driver (
                 iocs = 1'b1;
                 iorw = 1'b0;
                 ioaddr = ADDR_DIV_LO;
-                odata = DIV_LO;
+                odata = DIV_LO[br_cfg];
                 load_fifo = 1'b1;
 
                 next_state = LOAD_HI;
@@ -60,7 +60,7 @@ module driver (
                 iocs = 1'b1;
                 iorw = 1'b0;
                 ioaddr = ADDR_DIV_HI;
-                odata = DIV_HI;
+                odata = DIV_HI[br_cfg];
                 load_fifo = 1'b1;
 
                 next_state = RECV;
